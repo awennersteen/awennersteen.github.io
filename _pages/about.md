@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I'm Aleksander - a Norwegian living in Madrid, Spain. I'm a quantum software technical lead at [Pasqal](https://pasqal.com) where I work cross-functionally across our quantum software (libraries + emulation) and cloud platform. My technical interest are in the intersection of HPC, ML/AI and Quantum, and I'm also very interested in developing a business vision of these areas.
+I'm Aleksander - a Norwegian living in Madrid, Spain.
 
 I'm a quantum software technical lead at [Pasqal](https://pasqal.com) where I work cross-functionally across our quantum software (libraries + emulation) and cloud platform.
 The rest of my time I dedicate to exploring LLMs/ChatBots (especially with Retrieval Augmented Generation (RAG) techniques) and running LLMs on edge-devices.
@@ -18,7 +18,7 @@ Those are good examples of industries that I'm interested in targeting as I beli
 
 Currently I'm looking into the tourism and hospitality industry in a similar manner at [MyConcierges](https://MyConcierges.ai) and working on solving bureaucracy at [Tramitit](https://tramitit.com).
 
-On the pure technical side as I've progressed in my career I've become very interested in the theory of software engineering and architecture, leadership. I hope to find time soon to add some posts on that to my [musings](posts).
+I'm trying to publish my thoughts on software, quantum, AI and anything else under [musings](posts).
 
 
 Contact
