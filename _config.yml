@@ -11,7 +11,7 @@ title                    : "Aleksander Wennersteen"
 title_separator          : "-"
 name                     : &name "Aleksander Wennersteen"
 description              : &description "The homepage of quantum, HPC and ML developer Aleksander Wennersteen"
-url                      : https://awennersteen.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://awennersteen.com # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "awennersteen/awennersteen.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -20,32 +20,6 @@ words_per_minute         : 160
 future                   : true
 read_more                : "enabled" # if enabled, adds "Read more" links to excerpts
 talkmap_link             : true #change to true to add link to talkmap on talks page
-comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
-  disqus:
-    shortname            :
-  discourse:
-    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
-  facebook:
-    appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
-staticman:
-  allowedFields          : ['name', 'email', 'url', 'message']
-  branch                 : "gh-pages" # "master", "gh-pages"
-  commitMessage          : "New comment."
-  filename               : comment-{@timestamp}
-  format                 : "yml"
-  moderation             : true
-  path                   : "_data/comments/{options.slug}"
-  requiredFields         : ['name', 'email', 'message']
-  transforms:
-    email                : "md5"
-  generatedFields:
-    date:
-      type               : "date"
-      options:
-        format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 atom_feed:
   path                   : # blank (default) uses feed.xml
 
@@ -73,10 +47,7 @@ social:
 
 # Analytics
 analytics:
-  provider               :  "false" # false (default), "google", "google-universal", "custom"
-  google:
-    tracking_id          :
-
+  provider               :  "custom" # false (default), "google", "google-universal", "custom"
 
 # Site Author
 author:
@@ -225,7 +196,7 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: America/Los_Angeles # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Europe/Madrid # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
