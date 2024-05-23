@@ -57,33 +57,16 @@ author:
   location         : "Madrid"
   employer         : "PASQAL"
   googlescholar    : "https://scholar.google.com/citations?user=Qr1PnGAAAAAJ"
+  arxiv            : "https://arxiv.org/search/quant-ph?searchtype=author&query=Wennersteen,+A"
   email            : "awennersteen@gmail.com"
   researchgate     :
   uri              :
-  bitbucket        :
-  codepen          :
-  dribbble         :
-  flickr           :
-  facebook         :
-  foursquare       :
   github           : "awennersteen"
-  google_plus      :
-  keybase          :
-  instagram        :
-  lastfm           :
   linkedin         : "awennersteen"
   orcid            :
-  pinterest        :
-  soundcloud       :
   stackoverflow    :
   steam            :
-  tumblr           :
   twitter          : "awennersteen"
-  vine             :
-  weibo            :
-  xing             :
-  youtube          :
-  wikipedia        :
 
 
 # Reading Files
@@ -231,21 +214,7 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
-# https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
 
-
-# HTML Compression
-# - http://jch.penibelst.de/
 compress_html:
   clippings: all
   ignore:
