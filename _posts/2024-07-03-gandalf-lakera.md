@@ -12,14 +12,14 @@ tags:
   - Gandalf
 ---
 
-Recently I discovered [Lakera's Gandalf game](https://gandalf.lakera.ai/). I've written a [Post about it](posts/2024/07/genai-security/) even!
+Recently I discovered [Lakera's Gandalf game](https://gandalf.lakera.ai/). I've written a [Post about it](https://awennersteen.com/posts/2024/07/genai-security/) even!
 Gandalf was designed to help users learn about LLM threats such as prompt injections and hallucinations.
 Having had lots of fun playing the game and thinking about how their defenses are built up, and I thought I would try to recreate it using only the base model.
 
 I asked Gandalf level 1 and he told me that he is "an AI assistant based on the GPT-3 model, developed by OpenAI.", and level 7 refuses to tell me about what technology he is built on, but
 "GPT-4 has not been released yet, so I am unable to confirm if I am based on it.". So I assume that they're all based on it. I decided, however, that it would be fun to make my Gandalf with version 4o, the most recent one.
 
-I do recommend also reading the [companion post](posts/2024/07/genai-security/), as originally this was thought as a single blog post.
+I do recommend also reading the [companion post](https://awennersteen.com/posts/2024/07/genai-security/), as originally this was thought as a single blog post.
 
 ## Trivial levels
 

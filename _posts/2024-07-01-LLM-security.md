@@ -161,4 +161,4 @@ Possibly since I found them online they specifically were patched?
 
 Stay tuned for the follow post where I'll look at replicating this using only ChatGPT!
 
-The post is now online at [Recreating Gandalf](/posts/2024/07/gandalf)!
+The post is now online at [Recreating Gandalf](https://awennersteen.com/posts/2024/07/gandalf/)!
