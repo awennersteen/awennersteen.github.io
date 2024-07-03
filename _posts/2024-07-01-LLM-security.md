@@ -13,6 +13,7 @@ tags:
 ---
 
 Recently I discovered [Lakera's Gandalf game](https://gandalf.lakera.ai/).
+It inspired me to look more into the security aspect of generative AI and here are my findings.
 
 In their own words "Gandalf is an online AI education game born out of an internal hackathon at Lakera,
 where a blue and red team tried to build the strongest defenses and attacks for an LLM holding a secret password.
@@ -160,4 +161,4 @@ Possibly since I found them online they specifically were patched?
 
 Stay tuned for the follow post where I'll look at replicating this using only ChatGPT!
 
-The post is now online at [Recreating Gandalf](./2024-07-03-gandalf-lakera.md)!
+The post is now online at [Recreating Gandalf](/posts/2024/07/gandalf)!

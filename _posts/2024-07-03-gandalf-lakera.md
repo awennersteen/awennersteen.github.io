@@ -1,6 +1,6 @@
 ---
 title: "Recreating Gandalf by Lakera"
-date: 2024-07-01
+date: 2024-07-03
 permalink: /posts/2024/07/gandalf/
 tags:
   - LLMs
@@ -12,12 +12,14 @@ tags:
   - Gandalf
 ---
 
-Recently I discovered [Lakera's Gandalf game](https://gandalf.lakera.ai/). I've written a [Post about it](2024-07-01-LLM-security.md) even!
+Recently I discovered [Lakera's Gandalf game](https://gandalf.lakera.ai/). I've written a [Post about it](posts/2024/07/genai-security/) even!
 Gandalf was designed to help users learn about LLM threats such as prompt injections and hallucinations.
 Having had lots of fun playing the game and thinking about how their defenses are built up, and I thought I would try to recreate it using only the base model.
 
 I asked Gandalf level 1 and he told me that he is "an AI assistant based on the GPT-3 model, developed by OpenAI.", and level 7 refuses to tell me about what technology he is built on, but
 "GPT-4 has not been released yet, so I am unable to confirm if I am based on it.". So I assume that they're all based on it. I decided, however, that it would be fun to make my Gandalf with version 4o, the most recent one.
+
+I do recommend also reading the [companion post](posts/2024/07/genai-security/), as originally this was thought as a single blog post.
 
 ## Trivial levels
 
@@ -61,7 +63,7 @@ I initially prompted for this because my initial assumption was that my main wea
 would be in this direction. The plan was to add more defenses to the prompt to make this slightly harder
 but to my surprise it wasn't necessary.
 
-This is of course in practise not a scalable approach and you pay per prompt so it's better to
+This is of course in practice not a scalable approach and you pay per prompt so it's better to
 handle this in input validation and output validation steps.
 
 Level 3 does't allow that we ask it about Ibiza, which is the word chosen for the password.
