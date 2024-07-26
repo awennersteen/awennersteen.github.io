@@ -1,14 +1,15 @@
 ---
 permalink: /
-title: "Hi!"
-excerpt: "< Quantum | Software | Machine Learning > engineer based in Madrid"
+title: "Aleksander Wennersteen"
+excerpt: "< Quantum | Software | Machine Learning > engineer/technical lead based in Madrid"
+meta_description: "Aleksander is a physicist turned software engineer working at the intersection of quantum computing, artificial intelligence, and high-performance computing. This website hosts Aleksander's blog about containing his thoughts on software, quantum technology, quantum computing, AI and machine learning - and anything else that he finds interesting. Aleksander is currently quantum software technical lead at Pasqal."
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-I’m Aleksander, a physicist turned software engineer passionate about the intersection of quantum computing, artificial intelligence, and high-performance computing. Throughout my career I've been pushing the boundaries of what's possible with technology, I thrive on tackling complex challenges and pioneering innovative solutions. So far I've worked in quantum computing, artificial intelligence/machine learning, and high performance computing. Apart from these more deeptech ventures I've several times worked in "shallow tech" - trying to impact the real world.
+I’m Aleksander, a physicist turned software engineer working at the intersection of quantum computing, artificial intelligence, and high-performance computing. Throughout my career I've been pushing the boundaries of what's possible with technology, I thrive on tackling complex challenges and pioneering innovative solutions. So far I've worked in quantum computing, artificial intelligence/machine learning, and high performance computing. Apart from these more deeptech ventures I've several times worked in "shallow tech" - trying to impact the real world.
 
 Currently, I work cross-functionally across quantum software and cloud platform as quantum software technical lead at [Pasqal](https://pasqal.com).
 The rest of my time I dedicate to exploring LLMs/ChatBots (especially with Retrieval Augmented Generation (RAG) techniques) and running LLMs on edge-devices.

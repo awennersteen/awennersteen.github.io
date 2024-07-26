@@ -1,7 +1,8 @@
 ---
 permalink: /interests/
-title: "Interests"
-excerpt: "My interests:"
+title: "Interests outside of technology"
+excerpt: "Aleksander enjoys art, especially painting. While he finds post-modernism intriguing impressionism and related styles are his favourite. Aleksander used to want to be an archaeologist and still is very interested in history."
+meta_description: "Aleksander is a physicist turned software engineer working at the intersection of quantum computing, artificial intelligence, and high-performance computing. He also holds interests in the arts and humanities that this section will outline."
 author_profile: true
 redirect_from: 
   - /interests.html

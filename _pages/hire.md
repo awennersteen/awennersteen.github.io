@@ -1,8 +1,9 @@
 ---
 permalink: /hire/
-title: "Consulting"
+title: "Technology consulting services from Aleksander Wennersteen"
 excerpt: "I'll help you!"
 author_profile: true
+meta_description: "Aleksander is a physicist turned software engineer working at the intersection of quantum computing, artificial intelligence, and high-performance computing. Aleksander is available for consulting jobs and advisory roles. Aleksander is currently quantum software technical lead at Pasqal."
 redirect_from: 
   - /hire.html
   - /consult/
