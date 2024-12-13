@@ -23,5 +23,15 @@ var addressPoints = [
     "Bellevue, WA, USA",
     47.6144219,
     -122.192337
+  ],
+  [
+    "Atlanta, GA, USA",
+    33.7604,
+    -84.4024
+  ],
+  [
+    "Brussels, Belgium",
+    50.8477,
+    4.3572
   ]
 ];
