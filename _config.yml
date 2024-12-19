@@ -38,13 +38,25 @@ og_image                 :  # Open Graph/Twitter default site image
 social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
-  links: ["https://awennersteen.com", "https://linkedin.com/awennersteen", "https://awennersteen.medium.com", "https://github.com/awennersteen", "https://twitter.com/awennersteen", "https://bsky.app/profile/awennersteen.bsky.social", "https://scholar.google.com/citations?user=Qr1PnGAAAAAJ&hl=en"]
+  links:
+    - "https://awennersteen.com"
+    - "https://linkedin.com/awennersteen"
+    - "https://awennersteen.medium.com"
+    - "https://github.com/awennersteen"
+    - "https://twitter.com/awennersteen"
+    - "https://bsky.app/profile/awennersteen.bsky.social"
+    - "https://scholar.google.com/citations?user=Qr1PnGAAAAAJ&hl=en"
+    - "https://fosdem.org/2025/schedule/speaker/aleksander_wennersteen/"
   alumniOf: "The University of Edinburgh"
   worksFor: "Pasqal"
   nationality: "Norway"
   home: "Madrid, Spain"
   description: "Aleksander Wennersteen software engineer and researcher working at the intersection of quantum computing, artificial intelligence, and high-performance computing."
-  knowsAbout: ["Quantum Computing", "Software", "Artificial Intelligence", "HPC"]
+  knowsAbout:
+    - "Quantum Computing"
+    - "Software"
+    - "Artificial Intelligence"
+    - "HPC"
 
 # Analytics
 analytics:
@@ -70,6 +82,8 @@ author:
   twitter          : "awennersteen"
   producthunt      : ""
   researchhr       : ""
+  bsky             : "https://bsky.app/profile/awennersteen.bsky.social"
+
 
 
 # Reading Files

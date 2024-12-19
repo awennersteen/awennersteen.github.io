@@ -100,12 +100,12 @@
     "@type" : "Person",
     "name" : "{{ site.social.name | default: site.name }}",
     "url" : {{ seo_url | jsonify }},
-    "sameAs" : "{{ site.social.links | jsonify }}",
+    "sameAs" : {{ site.social.links | jsonify }},
     "worksFor": "{{ site.social.worksFor }}",
     "alumniOf": "{{ site.social.alumniOf }}",
     "nationality": "{{ site.social.nationality }}",
     "description": "{{ site.social.description }}",
-    "knowsAbout": "{{ site.social.knowsAbout | jsonify }}"
+    "knowsAbout": {{ site.social.knowsAbout | jsonify }}
   }
 </script>
 

@@ -118,6 +118,9 @@
       {% if author.producthunt %}
         <li><a href="https://www.producthunt.com/@awennersteen"><i class="fa-brands fa-producthunt" aria-hidden="true"></i> Product Hunt</a></li>
       {% endif %}
+      {% if author.bsky %}
+         <li><a href="{{ author.bsky }}"><i class="fa-solid fa-square" style="color: #1184fe" aria-hidden="true"></i> Bluesky</a></li>
+      {% endif %}
     </ul>
   </div>
 </div>
