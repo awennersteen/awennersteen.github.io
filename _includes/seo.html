@@ -102,23 +102,14 @@
     "url" : {{ seo_url | jsonify }},
     "sameAs" : {{ site.social.links | jsonify }},
     "affiliation": {
-      "@type": "OrganizationRole",
-      "affiliation": {
-        "@type": "Organization",
-        "name": "{{ site.social.affiliation }}",
-        "sameAs": ["https://fr.wikipedia.org/wiki/Pasqal", "https://pasqal.com"]
-      },
-     "startDate": "2021"
+      "@type": "Organization",
+      "name": "{{ site.social.affiliation }}",
+      "sameAs": ["https://fr.wikipedia.org/wiki/Pasqal", "https://pasqal.com"]
     },
     "alumniOf": {
-      "@type": "OrganizationRole",
-      "alumniOf": {
-        "@type": "CollegeOrUniversity",
-        "name": "{{ site.social.alumniOf }}",
-        "sameAs": "https://en.wikipedia.org/wiki/University_of_Edinburgh"
-      },
-      "startDate": "2014",
-      "endDate": "2019"
+      "@type": "CollegeOrUniversity",
+      "name": "{{ site.social.alumniOf }}",
+      "sameAs": "https://en.wikipedia.org/wiki/University_of_Edinburgh"
     },
     "nationality": {
       "@type": "Country",
