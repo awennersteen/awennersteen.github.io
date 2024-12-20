@@ -48,7 +48,7 @@ social:
     - "https://scholar.google.com/citations?user=Qr1PnGAAAAAJ&hl=en"
     - "https://fosdem.org/2025/schedule/speaker/aleksander_wennersteen/"
   alumniOf: "The University of Edinburgh"
-  worksFor: "Pasqal"
+  affiliation: "Pasqal"
   nationality: "Norway"
   home: "Madrid, Spain"
   description: "Aleksander Wennersteen software engineer and researcher working at the intersection of quantum computing, artificial intelligence, and high-performance computing."

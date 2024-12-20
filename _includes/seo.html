@@ -101,9 +101,30 @@
     "name" : "{{ site.social.name | default: site.name }}",
     "url" : {{ seo_url | jsonify }},
     "sameAs" : {{ site.social.links | jsonify }},
-    "worksFor": "{{ site.social.worksFor }}",
-    "alumniOf": "{{ site.social.alumniOf }}",
-    "nationality": "{{ site.social.nationality }}",
+    "affiliation": {
+      "@type": "OrganizationRole",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "{{ site.social.affiliation }}",
+        "sameAs": ["https://fr.wikipedia.org/wiki/Pasqal", "https://pasqal.com"],
+      },
+     "startDate": "2021",
+    },
+    "alumniOf": {
+      "@type": "OrganizationRole",
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "{{ site.social.alumniOf }}",
+        "sameAs": "https://en.wikipedia.org/wiki/University_of_Edinburgh"
+      },
+      "startDate": "2014",
+      "endDate": "2019"
+    },
+    "nationality": {
+      "@type": "Country",
+      "name": "{{ site.social.nationality }}",
+      "sameAs": "https://en.wikipedia.org/wiki/Norway"
+    },
     "description": "{{ site.social.description }}",
     "knowsAbout": {{ site.social.knowsAbout | jsonify }}
   }
