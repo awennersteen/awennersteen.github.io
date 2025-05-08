@@ -40,13 +40,16 @@ social:
   name                   : # If the user or organization name differs from the site's name
   links:
     - "https://awennersteen.com"
+    - "https://ieeexplore.ieee.org/author/174901648336142"
     - "https://linkedin.com/awennersteen"
     - "https://awennersteen.medium.com"
     - "https://github.com/awennersteen"
-    - "https://twitter.com/awennersteen"
+    - "https://x.com/awennersteen"
     - "https://bsky.app/profile/awennersteen.bsky.social"
     - "https://scholar.google.com/citations?user=Qr1PnGAAAAAJ&hl=en"
     - "https://fosdem.org/2025/schedule/speaker/aleksander_wennersteen/"
+    - "https://about.me/awennersteen"
+    - "https://www.slideshare.net/awennersteen"
   alumniOf: "The University of Edinburgh"
   affiliation: "Pasqal"
   nationality: "Norway"
@@ -76,7 +79,7 @@ author:
   uri              :
   github           : "awennersteen"
   linkedin         : "awennersteen"
-  orcid            :
+  orcid            : "https://orcid.org/0009-0006-5486-0980"
   stackoverflow    :
   steam            :
   twitter          : "awennersteen"
