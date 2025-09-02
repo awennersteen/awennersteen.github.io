@@ -2,7 +2,7 @@
 title: "Towards quantum-classical supercomputing with neutral atoms"
 collection: talks
 type: "Talk"
-permalink: /talks/2025-06-13-ISC25
+permalink: /talks/2025-06-26-CETRARO
 venue: "HPC 25"
 date: 2025-06-26
 location: "Cetraro, Italy"

@@ -1,42 +1,47 @@
 var addressPoints = [
   [
-    "Copenhagen, Denmark",
+    "EQS3, Copenhagen, Denmark",
     55.6761,
     12.5683
   ],
   [
-    "London, UK",
+    "POPL, London, UK",
     51.5074456,
     -0.1277653
   ],
   [
-    "Oslo, Norway",
+    "OsloMet Seminar, Oslo, Norway",
     59.9133301,
     10.7389701
   ],
   [
-    "Hamburg, Germany",
+    "ISC, Hamburg, Germany",
     53.550341,
     10.000654
   ],
   [
-    "Bellevue, WA, USA",
+    "IEEE Quantum Week, Bellevue, WA, USA",
     47.6144219,
     -122.192337
   ],
   [
-    "Atlanta, GA, USA",
+    "SC, Atlanta, GA, USA",
     33.7604,
     -84.4024
   ],
   [
-    "Brussels, Belgium",
+    "FOSDEM, Brussels, Belgium",
     50.8477,
     4.3572
   ],
   [
-    "Cetraro, Italy",
+    "HPC, Cetraro, Italy",
     39.5444351,
     15.8906907
+  ],
+  [
+    "MatSci Working Group, Riken R-CCS, Kobe, Japan",
+    34.6262977,
+    135.2476563
   ]
 ];
