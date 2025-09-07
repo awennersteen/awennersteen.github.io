@@ -25,7 +25,7 @@ var addressPoints = [
     -122.192337
   ],
   [
-    "SC, Atlanta, GA, USA",
+    "SC24, Atlanta, GA, USA",
     33.7604,
     -84.4024
   ],
@@ -43,5 +43,10 @@ var addressPoints = [
     "MatSci Working Group, Riken R-CCS, Kobe, Japan",
     34.6262977,
     135.2476563
+  ],
+  [
+    "SC25, St. Louis, MO, USA",
+    38.6310938,
+    -90.2321172
   ]
 ];
