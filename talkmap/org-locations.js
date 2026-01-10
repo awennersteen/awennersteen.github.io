@@ -48,5 +48,15 @@ var addressPoints = [
     "SC25, St. Louis, MO, USA",
     38.6310938,
     -90.2321172
+  ],
+  [
+    "EQS3-VI, Torino, Italy",
+    45.0648407,
+    7.6559521
+  ],
+  [
+    "OCP EMEA Summit, Barcelona, Spain",
+    41.4088452,
+    2.2167637
   ]
 ];
