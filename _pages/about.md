@@ -2,7 +2,7 @@
 permalink: /
 title: "About Aleksander Wennersteen"
 excerpt: "< Quantum | Software | Machine Learning > engineer/technical lead based in Madrid"
-meta_description: "Aleksander is a physicist turned software engineer working at the intersection of quantum computing, artificial intelligence, and high-performance computing. This website hosts Aleksander's blog about containing his thoughts on software, quantum technology, quantum computing, AI and machine learning - and anything else that he finds interesting. Aleksander currently serves as technical lead quantum-centric HPC at Pasqal."
+description: "Aleksander is a physicist turned software engineer working at the intersection of quantum computing, artificial intelligence, and high-performance computing. This website hosts Aleksander's blog about containing his thoughts on software, quantum technology, quantum computing, AI and machine learning - and anything else that he finds interesting. Aleksander currently serves as technical lead quantum-centric HPC at Pasqal."
 author_profile: true
 modified: 2026-01-20
 redirect_from: 
@@ -41,14 +41,14 @@ advising the board on strategy, commercial on go-to-market plans and sales pitch
 The rest of my time I dedicate to exploring LLMs/ChatBots (especially with Retrieval Augmented Generation (RAG) techniques) and running LLMs on edge-devices.
 I'm also looking into the tourism and hospitality industry at [MyConcierges](https://MyConcierges.ai) and working on solving bureaucracy at [Tramitit](https://tramitit.com).
 
-If interested you can even [hire me](hire) for short term engagements or advice!
+If interested you can even [hire me](./hire/) for short term engagements or advice!
 
 Twice I've tried to create my own startups, both times failing early. Once in the area of renting clothes to combat fast fashion and another in modernizing the construction industry.
 Those are good examples of industries that I'm interested in targeting as I believe that they have both large addressable markets, but there there can be large social and environmental gains to be had.
 
-I'm trying to publish my thoughts on software, quantum, AI and anything else under [musings](posts).
+I'm trying to publish my thoughts on software, quantum, AI and anything else under [musings](./posts/).
 
-I enjoy [talking at conferences](./talks) and I try to mostly view the world from a birdseye view when I do so.
+I enjoy [talking at conferences](./talks/) and I try to mostly view the world from a birdseye view when I do so.
 For example you can watch my talk on [Qadence](https://github.com/pasqal-io/qadence) on [YouTube](https://www.youtube.com/watch?v=2WwZO42-btc).
 
 ### Selected Blog Posts
@@ -70,7 +70,7 @@ For example you can watch my talk on [Qadence](https://github.com/pasqal-io/qade
 
 |  |  |
 |--------|--------|
-| [OCP EMEA Summit (Barcelona)](./talks//2026-04-29-OCP-EMEA) | 04/29/2026 | 
+| [OCP EMEA Summit (Barcelona)](./talks/2026-04-29-OCP-EMEA) | 04/29/2026 | 
 | [OpenQSE (Online)](./talks/2026-01-19-OpenQSE) | 01/19/2026 |
 | [OCP FTI (Online)](./talks/2026-01-16-OCP) |  01/16/2026 | 
 

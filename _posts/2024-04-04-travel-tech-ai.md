@@ -1,15 +1,15 @@
 ---
-title: "Travel Tech and AI"
+title: "The Future of Travel Tech: How AI is Shaping the Journey Ahead"
 date: 2024-04-04
 permalink: /posts/2024/04/travel-tech/
+description: "A forward-looking view on how artificial intelligence is transforming travel technology, shaping experiences in planning, service, and customer engagement."
+excerpt: "The post examines the intersection of travel tech and AI, outlining how intelligent systems are reshaping traveler experiences, operational processes, and service personalization across the journey."
 tags:
   - travel-tech
   - AI
   - GenAI
   - generative-ai
 ---
-
-# The Future of Travel Tech: How AI is Shaping the Journey Ahead
 
 In recent years, the travel industry has undergone significant transformations, driven by advances in technology.
 Among these, artificial intelligence (AI) stands out as a particularly influential force.

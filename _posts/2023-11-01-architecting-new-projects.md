@@ -2,6 +2,8 @@
 title: 'Architecting new projects'
 date: 2023-11-01
 permalink: /posts/2023/11/architecting
+description: "Practical guidance on starting greenfield software projects, including requirement gathering, strategic planning, and balancing technical design with real-world execution."
+excerpt: "This post shares insights on initiating new software projects, emphasizing the iterative nature of requirements gathering, stakeholder alignment, and balancing technical ambition with maintainable progress."
 tags:
   - software
 ---
@@ -14,8 +16,7 @@ In this post I want to try to shed some light on how this truly is a iterative p
 Architecting a new software project is a challenging endeavor that requires a careful balance of technical acumen,
 strategic planning, and effective communication. One of the most critical stages in this process is requirements gathering. 
 
-The requirements stage
-===========
+## The requirements stage
 
 We need to understand what we're building and why. This is the requirements gathering stage.
 
@@ -41,8 +42,7 @@ I always like to write a design document or RFC where we also utilise a framewor
 This helps against scope creep and also in discovering where the biggest technical challenge will be and how to design the Proof of Concept (PoC).
 Comparing this explicitly against the closest available products and their shortcomings is crucial.
 
-The initial POC
-===========
+## The initial POC
 
 In the requirements gathering phase we've identified the primary problem the product aims to solve and the key features that need to be demonstrated.
 It is crucial to keep the scope limited to essential functionalities, ensuring that the PoC remains manageable and focused.
@@ -59,6 +59,6 @@ Engaging with potential users and clients during this phase provides valuable in
 I've found it most helpful to really sit down with people at this point and go through things.
 In some sense this is the second requirement gathering phase, as it is often first now that people are really able to articulate what they want and need.
 
-Maintaining the product long term
-============
+## Maintaining the product long term
+
 Is a whole different beast to be tackled in a later post!

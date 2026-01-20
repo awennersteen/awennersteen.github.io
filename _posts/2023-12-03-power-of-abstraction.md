@@ -2,6 +2,8 @@
 title: 'Power of abstraction'
 date: 2023-12-03
 permalink: /posts/2023/12/abstractions/
+description: "A reflection on how abstraction enables better software and mathematical thinking, managing complexity and improving performance through structured concepts."
+excerpt: "This essay discusses the role of abstraction in programming and mathematics, showing how focusing on high-level structures can manage complexity, enhance readability, and inform performance-oriented design."
 tags:
   - mathematics
   - quantum

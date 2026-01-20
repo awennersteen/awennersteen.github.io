@@ -3,7 +3,7 @@ title: "OCP EMEA Summit"
 collection: talks
 type: "Talk"
 permalink: /talks/2026-04-29-OCP-EMEA
-venue: " Barcelona International Convention Center (CCIB)"
+venue: "Barcelona International Convention Center (CCIB)"
 date: 2026-04-29
 location: "Barcelona, Spain"
 ---

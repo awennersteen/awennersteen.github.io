@@ -99,6 +99,7 @@
     "@context" : "https://schema.org",
     "@type" : "Person",
     "name" : "{{ site.social.name | default: site.name }}",
+    "image": {{ "/images/awennersteen.jpg" | absolute_url | jsonify }},
     "url" : {{ seo_url | jsonify }},
     "sameAs" : {{ site.social.links | jsonify }},
     "affiliation": {

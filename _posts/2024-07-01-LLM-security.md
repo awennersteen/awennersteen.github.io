@@ -2,6 +2,8 @@
 title: "Generative AI security"
 date: 2024-07-01
 permalink: /posts/2024/07/genai-security/
+description: "An analytical overview of generative AI and prompt injection risks explaining how LLMs process input and potential security gaps."
+excerpt: "This post explores generative AI, how large language models process prompts, and the threat of prompt injection attacks. Illustrating vulnerabilities and defensive considerations."
 tags:
   - LLMs
   - GenerativeAI
