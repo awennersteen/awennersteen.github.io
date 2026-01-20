@@ -1,15 +1,38 @@
 ---
 permalink: /
-title: "Aleksander Wennersteen"
+title: "About Aleksander Wennersteen"
 excerpt: "< Quantum | Software | Machine Learning > engineer/technical lead based in Madrid"
 meta_description: "Aleksander is a physicist turned software engineer working at the intersection of quantum computing, artificial intelligence, and high-performance computing. This website hosts Aleksander's blog about containing his thoughts on software, quantum technology, quantum computing, AI and machine learning - and anything else that he finds interesting. Aleksander currently serves as technical lead quantum-centric HPC at Pasqal."
 author_profile: true
+modified: 2026-01-20
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-I’m Aleksander, a physicist turned software engineer working at the intersection of quantum computing, artificial intelligence, and high-performance computing. Throughout my career I've been pushing the boundaries of what's possible with technology, I thrive on tackling complex challenges and pioneering innovative solutions. So far I've worked in quantum computing, artificial intelligence/machine learning, and high performance computing.
+<style>
+  table{
+    border: none;
+    border-collapse: collapse;
+  }
+  td, tr {
+    border: none;
+  }
+  th {
+    border: none;
+    display: none;
+  }
+  h3 {
+    text-align: center;
+  }
+  a {
+    white-space:nowrap;
+  }
+</style>
+
+Aleksander is a physicist turned software engineer working at the intersection of quantum computing, artificial intelligence, and high-performance computing.
+Throughout my career I've been pushing the boundaries of what's possible with technology, I thrive on tackling complex challenges and pioneering innovative solutions.
+So far I've worked in quantum computing, artificial intelligence/machine learning, and high performance computing.
 
 Currently, I work at [Pasqal](https://pasqal.com) as technical lead quantum-centric HPC.
 This is a very cross-functional role which consists of not only designing systems and writing software, but also
@@ -25,24 +48,35 @@ Those are good examples of industries that I'm interested in targeting as I beli
 
 I'm trying to publish my thoughts on software, quantum, AI and anything else under [musings](posts).
 
-I enjoy talking at conferences and I try to mostly view the world from a birdseye view when I do so.
-For example you can watch my talk on [Qadence](https://github.com/pasqal-io/qadence) on YouTube at [youtube.com/watch?v=2WwZ042-btc](https://www.youtube.com/watch?v=2WwZO42-btc).
+I enjoy [talking at conferences](./talks) and I try to mostly view the world from a birdseye view when I do so.
+For example you can watch my talk on [Qadence](https://github.com/pasqal-io/qadence) on [YouTube](https://www.youtube.com/watch?v=2WwZO42-btc).
 
-Contact
-======
+### Selected Blog Posts
 
-Email me at [awennersteen@gmail.com](mailto:awennersteen@gmail.com)
-
-Connect with me at [LinkedIn.com/in/awennersteen](https://linkedin.com/in/awennersteen)
-
-Check out my GitHub [github.com/awennersteen](https://github.com/awennersteen)
-
-See my publications [on Google Scholar](https://scholar.google.com/citations?user=Qr1PnGAAAAAJ&hl=en)
-
-In relation to Pasqal you can reach me at first.lastname@companyname.com.
+|  |  |
+|--------|--------|
+| [Recreating Gandalf by Lakera](./posts/2024/07/gandalf/) | LLM Prompt security: recreating the game and prompt security features directly in OpenAIs ChatGPT |
 
 
-Speaker Bio
-===========
+### Selected Publications
+
+|  |  |
+|--------|--------|
+| [User Centric HPC-QC Environment](./publications/2025-11-16-user-centric-qhpc) | QC-HPC software stack and integration model: Introducing Pasqal's new HPC-QC middleware including a 2nd level quantum scheduler |
+| [Qadence](./publications/2025-02-03-qadence) |  A digital and analog quantum DSL and framework that is fully differentiable built on PyTorch's AutoGrad engine |
+
+
+### Recent and Upcoming Talks and Events
+
+|  |  |
+|--------|--------|
+| [OCP EMEA Summit (Barcelona)](./talks//2026-04-29-OCP-EMEA) | 04/29/2026 | 
+| [OpenQSE (Online)](./talks/2026-01-19-OpenQSE) | 01/19/2026 |
+| [OCP FTI (Online)](./talks/2026-01-16-OCP) |  01/16/2026 | 
+
+
+
+## Speaker Bio
 
 Aleksander Wennersteen is Technical Lead for Quantum-Centric HPC at Pasqal where he focuses on integrating quantum computing with classical HPC systems and the development of hybrid quantum-classical workflows. Previously at Pasqal he was a quantum software engineer and technical lead working on quantum libraries, cloud platform and numerical simulation of quantum systems. He holds a master's degree in Mathematical Physics from the University of Edinburgh. Before joining PASQAL, Aleksander worked in high-performance computing and artificial intelligence.
+

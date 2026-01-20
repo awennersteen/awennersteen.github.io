@@ -11,6 +11,6 @@ location: "Barcelona, Spain"
 
 
 I was invited to give a talk at the [Open Compute Project EMEA Summit](https://www.opencompute.org/summit/emea-summit)
-In the Future Technology Initiative (OCP FTI) [Data Center Integration of Quantum Information Infrastructure](https://www.opencompute.org/projects/data-center-integration-of-quantum-information-infrastructure) track.
+in the Future Technology Initiative (OCP FTI) [Data Center Integration of Quantum Information Infrastructure](https://www.opencompute.org/projects/data-center-integration-of-quantum-information-infrastructure) track.
 
 More details to come.

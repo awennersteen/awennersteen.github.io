@@ -1,6 +1,9 @@
 # main links links
 main:
 
+  - title: "Home"
+    url: "/"
+
   - title: "Talks"
     url: /talks/
 
@@ -9,9 +12,6 @@ main:
 
   - title: "Musings"
     url: /posts/
-
-  - title: "Interests"
-    url: /interests/    
 
   - title: "Hire Me"
     url: /hire/    
