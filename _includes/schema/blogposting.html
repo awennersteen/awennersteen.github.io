@@ -1,0 +1,34 @@
+{% include base_path %}
+
+{% assign seo_url = site.url | append: site.baseurl %}
+{% assign page_url = page.url | prepend: seo_url | replace: "/index.html", "/" %}
+{% assign person_id = seo_url | append: "/#person" %}
+
+{% assign ld_headline = page.title | markdownify | strip_html | strip_newlines | escape_once %}
+{% assign ld_description = page.description | default: page.excerpt | default: site.description | markdownify | strip_html | strip_newlines | escape_once %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "@id": {{ page_url | append: "#blogposting" | jsonify }},
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": {{ page_url | append: "#webpage" | jsonify }}
+  },
+  "headline": {{ ld_headline | jsonify }},
+  "description": {{ ld_description | jsonify }},
+  "datePublished": {{ page.date | date_to_xmlschema | jsonify }}{% if page.modified %},
+  "dateModified": {{ page.modified | date_to_xmlschema | jsonify }}{% endif %},
+  "author": { "@id": {{ person_id | jsonify }} },
+  "publisher": { "@id": {{ person_id | jsonify }} }{% if page.tags %},
+  "keywords": {{ page.tags | join: ", " | jsonify }}{% endif %}{% if page.seo_image %},
+  "image": [
+    {% if page.seo_image contains "://" %}
+      {{ page.seo_image | jsonify }}
+    {% else %}
+      {{ page.seo_image | absolute_url | jsonify }}
+    {% endif %}
+  ]{% endif %}
+}
+</script>

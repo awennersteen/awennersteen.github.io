@@ -17,11 +17,26 @@ layout: default
 <div id="main" role="main">
   {% include sidebar.html %}
 
-  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+  {% assign schema_type = "CreativeWork" %}
+  {% if page.collection == "posts" %}
+    {% assign schema_type = "BlogPosting" %}
+  {% elsif page.collection == "talks" %}
+    {% assign schema_type = "Event" %}
+  {% elsif page.collection == "publications" %}
+    {% assign schema_type = "ScholarlyArticle" %}
+  {% endif %}
+
+  {% if page.collection == "posts" %}
+    {% include schema/blogposting.html %}
+  {% endif %}
+
+
+  <article class="page" itemscope itemtype="https://schema.org/{{ schema_type }}">
     {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
-    {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
-    {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date: "%B %d, %Y" }}">{% endif %}
-    {% if page.modified %}<meta itemprop="dateModified" content="{{ page.modified | date: "%B %d, %Y" }}">{% endif %}
+    {% assign schema_desc = page.description | default: page.excerpt %}
+    {% if schema_desc %}<meta itemprop="description" content="{{ schema_desc | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+    {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}">{% endif %}
+    {% if page.modified %}<meta itemprop="dateModified" content="{{ page.modified | date_to_xmlschema }}">{% endif %}
 
     <div class="page__inner-wrap">
       {% unless page.header.overlay_color or page.header.overlay_image %}

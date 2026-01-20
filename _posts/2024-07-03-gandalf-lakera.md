@@ -4,6 +4,7 @@ date: 2024-07-03
 permalink: /posts/2024/07/gandalf/
 description: "An exploration of Lakera’s Gandalf AI prompt injection challenge and my attempt to recreate its levels using LLM prompting, revealing insights into prompt security"
 excerpt: "I discovered Lakera’s Gandalf game, an educational AI challenge on prompt injections and hallucinations, and tried to recreate its levels using GPT-4o to understand how defenses work and where vulnerabilities appear."
+seo_image: images/level_1.png
 tags:
   - LLMs
   - Security
