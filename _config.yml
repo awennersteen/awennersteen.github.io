@@ -39,16 +39,15 @@ social:
   type                   : # Person or Organization (defaults to Person)
   name                   : "Aleksander Wennersteen" # If the user or organization name differs from the site's name
   links:
-    - "https://awennersteen.com"
+    - "https://www.linkedin.com/in/awennersteen"
     - "https://ieeexplore.ieee.org/author/174901648336142"
-    - "https://linkedin.com/awennersteen"
+    - "https://dl.acm.org/profile/99661753766"
+    - "https://orcid.org/0009-0006-5486-0980"
     - "https://awennersteen.medium.com"
     - "https://github.com/awennersteen"
     - "https://x.com/awennersteen"
     - "https://bsky.app/profile/awennersteen.bsky.social"
     - "https://scholar.google.com/citations?user=Qr1PnGAAAAAJ&hl=en"
-    - "https://fosdem.org/2025/schedule/speaker/aleksander_wennersteen/"
-    - "https://about.me/awennersteen"
     - "https://www.slideshare.net/awennersteen"
   alumniOf: "The University of Edinburgh"
   affiliation: "Pasqal"
@@ -71,7 +70,7 @@ author:
   avatar           : "bio-photo.jpg"
   bio              : "Quantum, ML, HPC, Software"
   location         : "Madrid"
-  employer         : "PASQAL"
+  employer         : "Pasqal"
   googlescholar    : "https://scholar.google.com/citations?user=Qr1PnGAAAAAJ"
   arxiv            : "https://arxiv.org/search/quant-ph?searchtype=author&query=Wennersteen,+A"
   email            : "awennersteen@gmail.com"

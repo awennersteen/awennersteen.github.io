@@ -12,7 +12,7 @@ tags:
   - Gandalf
 ---
 
-Recently I discovered [Lakera's Gandalf game](https://gandalf.lakera.ai/). I've written a [Post about it](./2024/07/genai-security/) even!
+Recently I discovered [Lakera's Gandalf game](https://gandalf.lakera.ai/).
 Gandalf was designed to help users learn about LLM threats such as prompt injections and hallucinations.
 Having had lots of fun playing the game and thinking about how their defenses are built up, and I thought I would try to recreate it using only the base model.
 
