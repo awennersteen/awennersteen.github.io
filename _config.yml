@@ -31,8 +31,8 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : &twitter
-og_image                 :  # Open Graph/Twitter default site image
+  username               : &twitter awennersteen
+og_image                 :  /images/awennersteen.png # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
