@@ -31,12 +31,11 @@ layout: default
   {% endif %}
 
 
+  {% if page.collection == "posts" %}
   <article class="page">
-    {% if page.collection == "posts" %}
-    <article class="page">
-    {% else %}
-    <article class="page" itemscope itemtype="https://schema.org/{{ schema_type }}">
-    {% endif %}
+  {% else %}
+  <article class="page" itemscope itemtype="https://schema.org/{{ schema_type }}">
+  {% endif %}
     <div class="page__inner-wrap">
       {% unless page.header.overlay_color or page.header.overlay_image %}
         <header>
