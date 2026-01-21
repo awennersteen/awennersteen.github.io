@@ -50,6 +50,7 @@
 
 {% if seo_description %}
   <meta property="og:description" content="{{ seo_description }}">
+  <meta name="description" content="{{ seo_description }}">
 {% endif %}
 
 {% if site.twitter.username %}
@@ -128,14 +129,18 @@
         "worksFor": {
           "@type": "Organization",
           "name": {{ site.social.affiliation | jsonify }},
-          "sameAs": ["https://pasqal.com"]
+          "sameAs": ["https://pasqal.com", "https://fr.wikipedia.org/wiki/Pasqal", "https://www.wikidata.org/wiki/Q90900655"]
         },
         "alumniOf": {
           "@type": "CollegeOrUniversity",
           "name": {{ site.social.alumniOf | jsonify }},
           "sameAs": ["https://en.wikipedia.org/wiki/University_of_Edinburgh"]
         },
-        "nationality": {{ site.social.nationality | jsonify }},
+        "nationality": {
+          "@type": "Country",
+          "name": "Norway",
+          "sameAs": "https://en.wikipedia.org/wiki/Norway"
+        },        
         "description": {{ site.social.description | jsonify }},
         "knowsAbout": {{ site.social.knowsAbout | jsonify }}
       }

@@ -4,6 +4,7 @@ title: "About Aleksander Wennersteen"
 excerpt: "< Quantum | Software | Machine Learning > engineer/technical lead based in Madrid"
 description: "Aleksander is a physicist turned software engineer working at the intersection of quantum computing, artificial intelligence, and high-performance computing. This website hosts Aleksander's blog about containing his thoughts on software, quantum technology, quantum computing, AI and machine learning - and anything else that he finds interesting. Aleksander currently serves as technical lead quantum-centric HPC at Pasqal."
 author_profile: true
+seo_image: images/awennersteen.jpg
 modified: 2026-01-20
 redirect_from: 
   - /about/

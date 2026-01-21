@@ -18,10 +18,25 @@
   },
   "headline": {{ ld_headline | jsonify }},
   "description": {{ ld_description | jsonify }},
+  "isAccessibleForFree": true,
+  "inLanguage": "en",
   "datePublished": {{ page.date | date_to_xmlschema | jsonify }}{% if page.modified %},
   "dateModified": {{ page.modified | date_to_xmlschema | jsonify }}{% endif %},
-  "author": { "@id": {{ person_id | jsonify }} },
-  "publisher": { "@id": {{ person_id | jsonify }} }{% if page.tags %},
+  "author": {
+    "@type": "Person",
+    "@id": {{ person_id | jsonify }},
+    "name": {{ site.social.name | default: site.name | jsonify }},
+    "url": {{ seo_url | jsonify }}
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": {{ site.title | jsonify }},
+    "url": {{ seo_url | jsonify }},
+    "logo": {
+      "@type": "ImageObject",
+      "url": {{ "images/favicon-512x512.png" | absolute_url | jsonify }}
+    }
+  }{% if page.tags %},
   "keywords": {{ page.tags | join: ", " | jsonify }}{% endif %}{% if page.seo_image %},
   "image": [
     {% if page.seo_image contains "://" %}

@@ -4,6 +4,7 @@ title: "Technology consulting services from Aleksander Wennersteen"
 excerpt: "Get expert advice on putting advanced computing methods in production, avoiding the common pitfalls by relying on my hard-learnt lessons."
 author_profile: true
 description: "Aleksander is a physicist turned software engineer working at the intersection of quantum computing, artificial intelligence, and high-performance computing. Aleksander is available for consulting jobs and advisory roles. Aleksander is currently quantum software technical lead at Pasqal."
+seo_image: images/awennersteen.jpg
 modified: 2026-01-20
 redirect_from: 
   - /hire.html
