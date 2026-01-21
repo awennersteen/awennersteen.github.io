@@ -22,8 +22,8 @@ Indeed, this manner of thinking where you really focus on proving correctness is
 
 Lastly, I gave a talk on our new quantum programming framework / language during the workshop dedicated to the topic of quantum programming languages.
 
-You can watch the presentation on [YouTube](https://www.youtube.com/watch?v=cXIll6l7S1s&t=8797s),
-the slides are available on [the conference webpage](Checkhttps://popl24.sigplan.org/details/planqc-2024-papers/4/Qadence-a-differentiable-interface-for-digital-analog-programs).
+You can watch the presentation on [Youtube](https://www.youtube.com/watch?v=2WwZO42-btc), in fact the whole session is available as well [here](https://www.youtube.com/watch?v=cXIll6l7S1s&t=8797s).
+The slides are available on [the conference webpage](Checkhttps://popl24.sigplan.org/details/planqc-2024-papers/4/Qadence-a-differentiable-interface-for-digital-analog-programs).
 
 Qadence is open source and you find it on our [GitHub](https://github.com/pasqal-io/qadence).
 

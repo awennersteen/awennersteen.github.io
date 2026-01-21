@@ -44,13 +44,13 @@
       <li><a href="https://www.linkedin.com/in/{{ author.linkedin }}"><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
       {% endif %}
       {% if author.twitter %}
-        <li><a href="https://twitter.com/{{ author.twitter }}"><i class="fab fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        <li><a href="https://twitter.com/{{ author.twitter }}"><i class="fab fa-twitter-square" aria-hidden="true"></i> X (Twitter)</a></li>
       {% endif %}
       {% if author.stackoverflow %}
         <li><a href="https://www.stackoverflow.com/users/{{ author.stackoverflow }}"><i class="fa fab -fw fa-stack-overflow" aria-hidden="true"></i> Stackoverflow</a></li>
       {% endif %}
       {% if author.youtube %}
-        <li><a href="https://www.youtube.com/user/{{ author.youtube }}"><i class="fab fa-youtube" aria-hidden="true"></i> YouTube</a></li>
+        <li><a href="https://www.youtube.com/{{ author.youtube }}"><i class="fab fa-youtube" aria-hidden="true"></i> YouTube</a></li>
       {% endif %}
       {% if author.googlescholar %}
         <li><a href="{{ author.googlescholar }}"><i class="fas fa-graduation-cap"></i> Google Scholar</a></li>
@@ -65,10 +65,10 @@
         <li><a href="https://en.wikipedia.org/wiki/User:{{ author.wikipedia }}"><i class="fab fa-wikipedia-w" aria-hidden="true"></i> Wikipedia</a></li>
       {% endif %}
       {% if author.producthunt %}
-        <li><a href="https://www.producthunt.com/@awennersteen"><i class="fa-brands fa-producthunt" aria-hidden="true"></i> Product Hunt</a></li>
+        <li><a href="https://www.producthunt.com/@awennersteen"><i class="fa-brands fa-product-hunt" aria-hidden="true"></i> Product Hunt</a></li>
       {% endif %}
       {% if author.bsky %}
-         <li><a href="{{ author.bsky }}"><i class="fa-solid fa-square" style="color: #1184fe" aria-hidden="true"></i> Bluesky</a></li>
+         <li><a href="{{ author.bsky }}"><i class="fa-brands fa-square-bluesky" aria-hidden="true"></i> Bluesky</a></li>
       {% endif %}
     </ul>
   </div>
