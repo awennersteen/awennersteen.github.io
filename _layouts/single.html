@@ -21,9 +21,9 @@ layout: default
   {% if page.collection == "posts" %}
     {% assign schema_type = "BlogPosting" %}
   {% elsif page.collection == "talks" %}
-    {% assign schema_type = "Event" %}
+    {% assign schema_type = "CreativeWork" %}
   {% elsif page.collection == "publications" %}
-    {% assign schema_type = "ScholarlyArticle" %}
+    {% assign schema_type = "CreativeWork" %}
   {% endif %}
 
   {% if page.collection == "posts" %}
@@ -31,17 +31,16 @@ layout: default
   {% endif %}
 
 
-  <article class="page" itemscope itemtype="https://schema.org/{{ schema_type }}">
-    {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
-    {% assign schema_desc = page.description | default: page.excerpt %}
-    {% if schema_desc %}<meta itemprop="description" content="{{ schema_desc | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
-    {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}">{% endif %}
-    {% if page.modified %}<meta itemprop="dateModified" content="{{ page.modified | date_to_xmlschema }}">{% endif %}
-
+  <article class="page">
+    {% if page.collection == "posts" %}
+    <article class="page">
+    {% else %}
+    <article class="page" itemscope itemtype="https://schema.org/{{ schema_type }}">
+    {% endif %}
     <div class="page__inner-wrap">
       {% unless page.header.overlay_color or page.header.overlay_image %}
         <header>
-          {% if page.title %}<h1 class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
+          {% if page.title %}<h1 class="page__title">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
           {% if page.read_time %}
             <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
           {% endif %}
@@ -62,7 +61,7 @@ layout: default
         </header>
       {% endunless %}
 
-      <section class="page__content" itemprop="text">
+      <section class="page__content">
         {{ content }}
         {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>

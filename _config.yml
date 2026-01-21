@@ -195,6 +195,70 @@ defaults:
       layout: single
       author_profile: true
       share: true
+  - scope:
+      path: "talkmap"
+    values:
+      sitemap: false
+  - scope:
+      path: "tags"
+    values:
+      sitemap: false
+  - scope:
+      path: "categories"
+    values:
+      sitemap: false
+  - scope:
+      path: "page-archive"
+    values:
+      sitemap: false
+  - scope:
+      path: "collection-archive"
+    values:
+      sitemap: false
+  - scope:
+      path: "sitemap"
+    values:
+      sitemap: false
+  - scope:
+      path: "terms"
+    values:
+      sitemap: false
+  - scope:
+      path: "_pages/tag-archive.html"
+    values:
+      sitemap: false
+  - scope:
+      path: "_pages/404.md"
+    values:
+      sitemap: false
+  - scope:
+      path: "_pages/page-archive.html"
+    values:
+      sitemap: false
+  - scope:
+      path: "_pages/collection-archive.html"
+    values:
+      sitemap: false
+  - scope:
+      path: "_pages/sitemap.md"
+    values:
+      sitemap: false
+  - scope:
+      path: "_pages/terms.md"
+    values:
+      sitemap: false
+  - scope:
+      path: "_pages/category-archive.html"
+    values:
+      sitemap: false
+  - scope:
+      path: "_pages/talkmap.html"
+    values:
+      sitemap: false
+  - scope:
+      path: "_pages/year-archive.html"
+    values:
+      sitemap: true # the source file for /posts/
 
 # Sass/SCSS
 sass:
