@@ -50,7 +50,8 @@ Those are good examples of industries that I'm interested in targeting as I beli
 I'm trying to publish my thoughts on software, quantum, AI and anything else under [musings](./posts/).
 
 I enjoy [talking at conferences](./talks/) and I try to mostly view the world from a birdseye view when I do so.
-For example you can watch my talk on [Qadence](https://github.com/pasqal-io/qadence) on [YouTube](https://www.youtube.com/watch?v=2WwZO42-btc).
+There is a playlist of the recordings I'm aware of on [YouTube](https://www.youtube.com/playlist?list=PLAqOOyYw_3asFPDvdKBex_jLCMXz98Bls).
+For example you can watch my [PLanQC 24 @ POPL talk](/talks/2024-01-20-PlanQC24-Qadence) on [YouTube](https://www.youtube.com/watch?v=2WwZO42-btc).
 
 ### Selected Blog Posts
 

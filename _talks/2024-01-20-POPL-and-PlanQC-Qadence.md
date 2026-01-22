@@ -6,6 +6,7 @@ permalink: /talks/2024-01-20-PlanQC24-Qadence
 venue: "Institution of Engineering and Technology"
 date: 2024-01-20
 location: "London, UK"
+excerpt: "I gave a talk about our digital-analog programming language Qadence at the Fourth International Workshop on Programming Languages for Quantum Computing (PLanQC 2024) at the 51st ACM SIGPLAN Symposium on Principles of Programming Languages (POPL 2024)."
 ---
 
 The Fourth International Workshop on Programming Languages for Quantum Computing (PLanQC 2024) at the
