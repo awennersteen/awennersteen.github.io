@@ -1,3 +1,18 @@
+<!-- For all browsers, preload CSS, fonts and icons -->
+<link rel="preload" as="style" href="{{ '/assets/css/main.css' | relative_url }}" fetchpriority="high">
+
+<link rel="preload"
+      href="{{ '/assets/webfonts/fa-solid-900.woff2' | relative_url }}"
+      as="font" type="font/woff2" crossorigin>
+
+<link rel="preload"
+      href="{{ '/assets/webfonts/fa-brands-400.woff2' | relative_url }}"
+      as="font" type="font/woff2" crossorigin>
+
+<link rel="preload" href="{{ '/assets/css/academicons.css' | relative_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="{{ '/assets/css/academicons.css' | relative_url }}"></noscript>
+
+
 {% include base_path %}
 
 <meta charset="utf-8">
@@ -10,12 +25,32 @@
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#ffffff">
 
 <script>
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
 </script>
 
-<!-- For all browsers -->
-<link rel="stylesheet" href="{{ base_path }}/assets/css/main.css">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+<link rel="manifest" href="/images/site.webmanifest">
+
 
 <meta http-equiv="cleartype" content="on">
+
+
+
+<!-- iff math required on page, load mathjax async -->
+{% if page.math %}
+<script type="text/x-mathjax-config">MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } });</script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ], processEscapes: true }
+  });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML" async></script>
+{% endif %}
+
+<!-- Block until main css loaded to avoid fouc-->
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
