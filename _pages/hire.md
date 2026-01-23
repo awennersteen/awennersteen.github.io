@@ -1,11 +1,11 @@
 ---
 permalink: /hire/
-title: "Technology consulting services from Aleksander Wennersteen"
-excerpt: "Get expert advice on putting advanced computing methods in production, avoiding the common pitfalls by relying on my hard-learnt lessons."
+title: "Technology consulting and advisory services"
+excerpt: "Senior-level technology consulting and advisory services focused on AI, quantum computing, and high-performance systems."
 author_profile: true
-description: "Aleksander is a physicist turned software engineer working at the intersection of quantum computing, artificial intelligence, and high-performance computing. Aleksander is available for consulting jobs and advisory roles. Aleksander is currently quantum software technical lead at Pasqal."
+description: "Senior-level technology consulting and advisory services by Aleksander Wennersteen, focusing on AI, quantum computing, and high-performance computing. Short-term, high-impact engagements for startups, scale-ups, and technical leadership teams."
 seo_image: images/awennersteen.jpg
-modified: 2026-01-20
+modified: 2026-01-23
 redirect_from: 
   - /hire.html
   - /consult/
@@ -14,25 +14,61 @@ redirect_from:
   - /consulting.html/
 ---
 
-For the time being I'm not actively looking to leave Pasqal and my projects but I am interested in smaller consulting jobs,
-advising companies or giving talks in my areas of interests.
-Always interested in speaking with interesting startups.
+For the time being I'm not actively looking to leave Pasqal for full-time roles.
+I provide senior-level technology consulting and advisory services for organizations working at the frontier of advanced computing.
+My focus is on short-term, high-impact engagements where deep technical judgment and system-level thinking materially influence outcomes.
+Always interested in speaking with interesting, early-stage, startups for any reason.
 
-Some areas of interest and examples of jobs I'm interested in are:
+## Where I typically add the most value
 
-### Strategic decisions
-Need a deep-dive and recommendations in the area of advanced computing methods such as AI, Quantum, HPC?
-Having been the subject-matter expert for several leaders, ranging from seasoned multi-decade c-suites to brand new ones, I have provided such advice many times over in the past.
+### High-level advisory work
 
-### Technical leadership assistance for start-ups
-I've gone through the motions a few times now and also experienced the pain points as you grow from a handful to beyond 300 people in the company.
-I can help you avoid some pitfalls, perform due diligence or in general provide a second opinion on technical matters vs your in-house or outsourced development team(s).
+I also take on **pure advisory engagements**, where the value lies in perspective rather than execution. Examples include:
 
-###  POC buildings
-In computer vision, machine learning, quantum computing and general where "advanced" numerical or algorithmic work is involved.
-In my professional work I've created many POCs in these areas and having an experienced hand involved in your POC project can save a lot of time, effort and money by correctly scoping the projects and knowing some nice tricks to speed up POCs.
+- Investor expert consulting for  market intelligence
+- HPC-AI-Quantum worldview
+- Evaluating emerging technologies beyond vendor narratives
 
-### High level advice
-For example somewhere in the space of workload scheduling, HPC, AI, Quantum.
+These engagements are typically short, focused, and decision-oriented.
 
-Do not hesitate to [email me](mailto:awennersteen@gmail.com) for more in-depth discussions.
+### Proof-of-concept design and evaluation
+
+I advise on and contribute to **proof-of-concept projects**, particularly where advanced numerical methods or non-standard algorithms are involved, including:
+
+- Machine learning and computer vision
+- Quantum computing and simulation
+- HPC-oriented or performance-critical workloads
+
+An experienced hand at the POC stage often saves significant time and cost by avoiding mis-scoping, over-engineering, or unrealistic expectations.
+
+### Strategic and architectural decision-making
+
+Organizations often reach inflection points where incremental optimization is no longer sufficient.
+I support leadership teams with **technical reviews** in areas such as:
+
+- Artificial intelligence and machine learning systems
+- Quantum computing and hybrid quantum–classical workflows
+- High-performance computing and workload orchestration
+- Integration of advanced computing into production environments
+
+My role is to clarify trade-offs, challenge assumptions, and help align technical decisions with business realities.
+
+### Technical leadership support for startups and scale-ups
+
+Having experienced multiple growth phases first-hand, from early teams to organizations with hundreds of engineers, I help companies navigate technical and organizational pitfalls that emerge as they scale.
+Typical engagements include:
+
+
+- Technical due diligence and second opinions
+- Architecture, tooling, and engineering practice reviews
+- Advisory support to CTOs and technical founders
+- Acting as an external counterpart to in-house or outsourced teams
+
+The goal is not to replace your team, but to strengthen decision-making at critical moments.
+
+
+## Get in touch
+
+If you are facing a complex decision or just want an informed external perspective, feel free to reach out.
+
+You can contact me directly by [email](mailto:awennersteen@gmail.com) to discuss whether a collaboration makes sense.

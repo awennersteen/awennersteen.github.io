@@ -4,14 +4,14 @@ main:
   - title: "Home"
     url: "/"
 
+  - title: "Blog"
+    url: /posts/
+
   - title: "Talks"
     url: /talks/
 
   - title: "Publications"
     url: /publications/
-
-  - title: "Musings"
-    url: /posts/
 
   - title: "Hire Me"
     url: /hire/    

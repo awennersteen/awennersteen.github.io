@@ -254,10 +254,6 @@ defaults:
     values:
       sitemap: false
   - scope:
-      path: "_pages/talkmap.html"
-    values:
-      sitemap: false
-  - scope:
       path: "_pages/year-archive.html"
     values:
       sitemap: true # the source file for /posts/
