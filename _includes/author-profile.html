@@ -25,7 +25,7 @@
   </div>
 
   <div class="author__urls-wrapper">
-    <button class="btn btn--inverse">Follow</button>
+    <button class="btn btn--inverse" aria-label="Follow or contact Aleksander Wennersteen">Follow</button>
     <ul class="author__urls social-icons">
       {% if author.location %}
         <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> {{ author.location }}</li>
@@ -58,13 +58,13 @@
         <li><a href="https://www.youtube.com/{{ author.youtube }}"><i class="fab fa-youtube" aria-hidden="true"></i> YouTube</a></li>
       {% endif %}
       {% if author.googlescholar %}
-        <li><a href="{{ author.googlescholar }}"><i class="fas fa-graduation-cap"></i> Google Scholar</a></li>
+        <li><a href="{{ author.googlescholar }}"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Google Scholar</a></li>
       {% endif %}
       {% if author.arxiv %}
-        <li><a href="{{ author.arxiv }}"><i class="ai ai-arxiv ai-fw"></i> arXiv</a></li>
+        <li><a href="{{ author.arxiv }}"><i class="ai ai-arxiv ai-fw" aria-hidden="true"></i> arXiv</a></li>
       {% endif %}    
       {% if author.orcid %}
-        <li><a href="{{ author.orcid }}"><i class="ai ai-orcid-square ai-fw"></i> ORCID</a></li>
+        <li><a href="{{ author.orcid }}"><i class="ai ai-orcid-square ai-fw" aria-hidden="true"></i> ORCID</a></li>
       {% endif %}
       {% if author.wikipedia %}
         <li><a href="https://en.wikipedia.org/wiki/User:{{ author.wikipedia }}"><i class="fab fa-wikipedia-w" aria-hidden="true"></i> Wikipedia</a></li>
