@@ -5,7 +5,7 @@ excerpt: "< Quantum | Software | Machine Learning > engineer/technical lead base
 description: "Aleksander is a physicist turned software engineer working at the intersection of quantum computing, artificial intelligence, and high-performance computing. This website hosts Aleksander's blog about containing his thoughts on software, quantum technology, quantum computing, AI and machine learning - and anything else that he finds interesting. Aleksander currently serves as technical lead quantum-centric HPC at Pasqal."
 author_profile: true
 seo_image: images/awennersteen.jpg
-modified: 2026-01-23
+modified: 2026-01-25
 redirect_from: 
   - /about/
   - /about.html
@@ -49,7 +49,7 @@ Occasionally, I write on software, quantum, AI and anything else in the blog [mu
 
 I enjoy [talking at conferences](./talks/) and I try to mostly view the world from a birdseye view when I do so.
 The recordings I'm aware of have been collected in a [YouTube Playlist](https://www.youtube.com/playlist?list=PLAqOOyYw_3asFPDvdKBex_jLCMXz98Bls).
-For example, the talk at [PLanQC24 @ POPL](/talks/2024-01-20-PlanQC24-Qadence) is available [here](https://www.youtube.com/watch?v=2WwZO42-btc).
+For example, the talk at [PLanQC24 @ POPL](/talks/2024-01-20-PlanQC24-Qadence) is available on the [POPL YouTube Channel](https://www.youtube.com/watch?v=2WwZO42-btc).
 
 The rest of my time I dedicate to exploring LLMs/ChatBots (especially with Retrieval Augmented Generation (RAG) techniques) and running LLMs on edge-devices.
 For example I have tried to applied them to areas like TravelTech and PropTech.
@@ -67,16 +67,17 @@ For example I have tried to applied them to areas like TravelTech and PropTech.
 |  |  |
 |--------|--------|
 | [User Centric HPC-QC Environment](./publications/2025-11-16-user-centric-qhpc) | QC-HPC software stack and integration model: Introducing Pasqal's new HPC-QC middleware including a 2nd level quantum scheduler |
+| [Quantum Resources in Resource Management Systems](./publications/2025-06-11-qrmi) | The Quantum Resource Management Interface (QRMI) and its Slurm integration via SPANK plugins. |
 | [Qadence](./publications/2025-02-03-qadence) |  A digital and analog quantum DSL and framework that is fully differentiable built on PyTorch's AutoGrad engine |
 
 
 ## Recent and Upcoming Talks and Events
 
 |  |  |
-|--------|--------|
-| [OCP EMEA Summit (Barcelona)](./talks/2026-04-29-OCP-EMEA) | 04/29/2026 | 
-| [OpenQSE (Online)](./talks/2026-01-19-OpenQSE) | 01/19/2026 |
-| [OCP FTI (Online)](./talks/2026-01-16-OCP) |  01/16/2026 | 
+|--------|--------|--------|
+| [OCP EMEA Summit (Barcelona)](./talks/2026-04-29-OCP-EMEA) | 04/29/2026 |  |
+| [OpenQSE (Online)](./talks/2026-01-19-OpenQSE) | 01/19/2026 | [Recording](https://www.youtube.com/watch?v=DoRbE9p2LuM) |
+| [OCP FTI (Online)](./talks/2026-01-16-OCP) |  01/16/2026 |  |
 
 
 
