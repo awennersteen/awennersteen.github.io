@@ -10,7 +10,7 @@ paperurl: 'https://dl.acm.org/doi/10.1145/3731599.3767549'
 
 The [paper](fhttps://dl.acm.org/doi/10.1145/3731599.3767549) is available for free from ACM.
 
-It was given as a [presentation](../talks/2025-11-16-SC25) at SC25 in St. Louis, and later at the [OpenQSE meeting](/talks/2026-01-19-openqse) of which there is also a recording.
+It was given as a [presentation](../talks/2025-11-16-SC25) at SC25 in St. Louis, and later at the [OpenQSE meeting](/talks/2026-01-19-OpenQSE) of which there is also a recording.
 
 This work introduces the Pasqal reference architecture for on-premise deployment of QPUs into HPC environments. We have special focus on the importance of creating a user-centric environment that is also not specific to the HPC cluster to enable users to move freely between ``execution environments" such as local emulators, cloud based QPUs and QPUs hosted by HPC centers on-premises. It builds on the previously introduced QRMI interface.
 
