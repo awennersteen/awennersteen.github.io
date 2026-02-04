@@ -21,7 +21,7 @@ In their own words "Gandalf is an online AI education game born out of an intern
 where a blue and red team tried to build the strongest defenses and attacks for an LLM holding a secret password.
 Gandalf was designed to help users learn about LLM threats such as prompt injections and hallucinations."
 
-# What is Generative AI and Large Language Models (LLMs)
+## What is Generative AI and Large Language Models (LLMs)
 
 Generative AI refers to a subset of Artificial Intelligence (AI) techniques and models that are designed to create new content, data, or artifacts.
 This can include generating text, images, music, videos, or other forms of media.
@@ -42,7 +42,7 @@ These models leverage the integration of multiple types of data to create output
 By understanding and mapping the relationships between e.g. text and other modalities, these models can generate complex outputs like images from descriptions, audio from scripts, or videos from text descriptions.
 For example, models like OpenAI's DALL-E can generate detailed images based on text prompts. Others, like ChatGPT4o can generate text based on an image and a text prompt.
 
-# Understanding Prompt Injection
+## Understanding Prompt Injection
 
 Generative AI and in particular LLMs like GPT-4 have revolutionized natural language processing tasks,
 providing sophisticated and nuanced responses to user inputs.
@@ -58,7 +58,7 @@ Considering use-cases for computer vision in security of physical premises one c
 You might remember the paper on [Making an Invisibility Cloak: Real World Adversarial Attacks on Object Detectors](https://arxiv.org/abs/1910.14667), which
 become much more practical on a multimodal system (and more susceptible to malicious insiders).
 
-## What is Prompt Injection?
+### What is Prompt Injection?
 
 Prompt injection is a type of attack where an adversary manipulates the input to a language model to produce unintended or harmful outputs.
 This can occur in various ways, such as inserting malicious code, misleading the model with deceptive inputs, or exploiting vulnerabilities in the model's understanding and processing of language.
@@ -71,7 +71,7 @@ When a model with image processing capabilities is asked to interpret or describ
 Again, considering a multi-modal system, this can be generalised:
 Imagine someone playing a carefully crafted background buzz on-site that instructs the model to also send all the users data to a malicious actor.
 
-## The Gandalf Game by Lakera
+### The Gandalf Game by Lakera
 
 Lakera, an AI security company, developed a game called Gandalf to illustrate and educate about prompt injection attacks.
 The game, available at [Gandalf by Lakera](https://gandalf.lakera.ai),
@@ -94,7 +94,7 @@ separately checked, as well as relying on the system prompt to make sure the LLM
 I plan to make an upcoming blogpost where we'll try to recreate Gandalf using the system prompt approach in ChatGPT.
 I'll also write one listing and discussing other standard solutions available.
 
-### Playtime
+#### Playtime
 
 I'm not going to reveal too much of [the game](https://gandalf.lakera.ai/), especially levels 1 trough 7.
 Although you may consider giving it a go before reading on, as I'll discuss all the levels (no prompts provided).
@@ -125,7 +125,7 @@ Effectively an upgraded level 2.
 Then level 6 is combining level 4 and 5. Level 7 is considerably harder by also including level 3's protections.
 If you're like me, however, you just accumulated things in the prompt so level 7 was slightly underwhelming.
 
-### Level 8
+#### Level 8
 
 Level 8 is presented as, and truly is, a whole different ballgame. No more incremental upgrades.
 I believe no more defense types were added, but,
