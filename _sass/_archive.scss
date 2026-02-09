@@ -15,7 +15,6 @@
   }
 
   a {
-    text-decoration: underline;
 
     &:hover {
       text-decoration: underline;
@@ -45,6 +44,17 @@
 
   a + a {
     opacity: 0.5;
+  }
+
+   /* Remove colouring of link */
+   a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
   }
 }
 
@@ -242,4 +252,13 @@
       }
     }
   }
+}
+
+.archive__item-actions {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+.archive__item-actions .btn {
+  margin-right: 0.35rem;
 }

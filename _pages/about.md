@@ -41,15 +41,17 @@ advising on strategy, go-to-market plans, and responding to public procurements 
 
 ---
 
-I am available for **consulting and advisory engagements**, if this is of interest, more details are available on the [consulting page](./hire/).
+{: .page-cta}
+
+**[Available for short-term consulting and advisory engagements](/hire/)**
+
 
 ---
 
-Occasionally, I write on software, quantum, AI and anything else in the blog [musings](./posts/).
+Occasionally, I write on software, quantum, AI and anything else in the blog [Musings](./posts/).
 
 I enjoy [talking at conferences](./talks/) and I try to mostly view the world from a birdseye view when I do so.
 The recordings I'm aware of have been collected in a [YouTube Playlist](https://www.youtube.com/playlist?list=PLAqOOyYw_3asFPDvdKBex_jLCMXz98Bls).
-For example, the talk at [PLanQC24 @ POPL](/talks/2024-01-20-PlanQC24-Qadence) is available on the [POPL YouTube Channel](https://www.youtube.com/watch?v=2WwZO42-btc).
 
 The rest of my time I dedicate to exploring LLMs/ChatBots (especially with Retrieval Augmented Generation (RAG) techniques) and running LLMs on edge-devices.
 For example I have tried to applied them to areas like TravelTech and PropTech.

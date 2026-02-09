@@ -1,73 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Leaflet debug page</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+      defer
+    ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="leaflet_dist/screen.css" />
 
-    <!DOCTYPE html>
-    <html>
-    <head>
-    	<title>Leaflet debug page</title>
-		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-		integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-		crossorigin=""/>
-		<script
-			src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-			integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-			crossorigin=""
-			defer>
-		</script>
-    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    	<link rel="stylesheet" href="leaflet_dist/screen.css" />
+    <link rel="stylesheet" href="leaflet_dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="leaflet_dist/MarkerCluster.Default.css" />
+    <script src="leaflet_dist/leaflet.markercluster-src.js" defer></script>
+    <script src="org-locations.js" defer></script>
+  </head>
+  <body>
+    <div id="map"></div>
+    <style>
+      #map {
+        height: 400px;
+        width: 100%;
+      }
+    </style>
+    <!-- Also deferred, so it runs after the above scripts -->
+    <script defer>
+      document.addEventListener("DOMContentLoaded", () => {
+        const map = L.map("map", {
+          center: [0, 0],
+          zoom: 0,
+          worldCopyJump: true,
+        });
 
-    	<link rel="stylesheet" href="leaflet_dist/MarkerCluster.css" />
-    	<link rel="stylesheet" href="leaflet_dist/MarkerCluster.Default.css" />
-    	<script src="leaflet_dist/leaflet.markercluster-src.js"></script>
-    	<script src="org-locations.js"></script>
+        L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+          maxZoom: 19,
+          attribution: "&copy; OpenStreetMap contributors",
+        }).addTo(map);
 
-    </head>
-    <body>
+        // Create markers and accumulate their bounds
+        const latLngs = [];
+        for (let i = 0; i < addressPoints.length; i++) {
+          const [title, lat, lon] = addressPoints[i];
+          const ll = L.latLng(lat, lon);
+          latLngs.push(ll);
+          L.marker(ll, { title }).addTo(map).bindPopup(title);
+        }
 
-		<div id="map"></div>
-		<style>
-			#map {
-			  height: 400px;
-			  width: 100%;
-			}
-		  </style>
-		  <script>
-			document.addEventListener('DOMContentLoaded', () => {
-			  const map = L.map('map', {
-				center: [0, 0],
-				zoom: 0,
-				worldCopyJump: true
-			  });
-			
-			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-				maxZoom: 19,
-				attribution: '&copy; OpenStreetMap contributors'
-			}).addTo(map);
-			
-			// Create markers and accumulate their bounds
-			const latLngs = [];
-			for (let i = 0; i < addressPoints.length; i++) {
-				const [title, lat, lon] = addressPoints[i];
-				const ll = L.latLng(lat, lon);
-				latLngs.push(ll);
-				L.marker(ll, { title }).addTo(map).bindPopup(title);
-			}
-			
-			// Fit the map to all markers
-			if (latLngs.length) {
-				const union = L.latLngBounds(latLngs);
-				map.fitBounds(union);
-			}
-			
-			// Optional: restrict vertical panning
-			const viewClamp = L.latLngBounds([[10, -180], [80, 180]]);
-			map.setMaxBounds(viewClamp);
-			map.setMaxBounds(map.getBounds().pad(0.1));
-			map.setMinZoom(map.getZoom())
+        // Fit the map to all markers
+        if (latLngs.length) {
+          const union = L.latLngBounds(latLngs);
+          map.fitBounds(union);
+        }
 
-			// Make size recalculated after resize
-			window.addEventListener('resize', () => map.invalidateSize());
-		});
-    	</script>
-    </body>
-    </html>
-    
+        // Optional: restrict vertical panning
+        const viewClamp = L.latLngBounds([
+          [10, -180],
+          [80, 180],
+        ]);
+        map.setMaxBounds(viewClamp);
+        map.setMaxBounds(map.getBounds().pad(0.1));
+        map.setMinZoom(map.getZoom());
+
+        // Make size recalculated after resize
+        window.addEventListener("resize", () => map.invalidateSize());
+      });
+    </script>
+  </body>
+</html>

@@ -38,32 +38,29 @@
       <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
     {% endif %}
 
-        {% if post.collection == 'publications' %}
-          <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}.
-            {% if post.citation and post.paperurl %}
-            Recommended citation: {{ post.citation }} <a href="{{ post.paperurl }}"><u>{{ post.paperurl }}</u></a></p>
-          {% elsif post.citation %}
-            <p>Recommended citation: {{ post.citation }} </p>
-          {% elsif post.paperurl %}
-            <a href=" {{ post.paperurl }} "><u>Paper available</u></a>.
-          {% endif %}
-          </p>
-        {% elsif post.date %}
-         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
-         {% if post.citation and post.paperurl %}
-         <p>Recommended citation: {{ post.citation }} <a href="{{ post.paperurl }}"><u>{{ post.paperurl }}</u></a></p>
-        {% elsif post.citation %}
-          <p>Recommended citation: {{ post.citation }} </p>
-        {% elsif post.paperurl %}
-          <p>Paper available <a href=" {{ post.paperurl }} "><u>here</u></a></p>
-        {% endif %}
+    {% if post.collection == 'publications' %}
+    <p class="archive__item-excerpt" itemprop="description">Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}.</p>
+        {% if post.excerpt != "" %}
+          <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
         {% endif %}
 
-
-    {% if post.excerpt and site.read_more != 'enabled' %}
+      <p class="archive__item-actions">
+        <a class="btn btn--primary btn--small" href="{{ base_path }}{{ post.url }}" rel="permalink">Read the post</a>
+        {% if post.paperurl %}
+          <a class="btn btn--small" href="{{ post.paperurl }}">Read the paper</a>
+        {% endif %}
+        {% if post.recording %}
+          <a class="btn btn--small" href="{{ post.recording }}">See a talk recording</a>
+        {% endif %}
+        {% if post.slides %}
+          <a class="btn btn--small" href="{{ post.slides }}">See the slides</a>
+        {% endif %}
+      </p>
+    {% else %}
     <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
-    {% elsif post.excerpt and site.read_more == 'enabled' %}
-    <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"><br>Read more</a></strong></p></p>
+      {% if site.read_more == 'enabled' %}
+      <a class="btn btn--primary btn--small" href="{{ base_path }}{{ post.url }}" rel="permalink">Read the post</a>
+      {% endif %}
     {% endif %}
   
   </article>

@@ -37,22 +37,22 @@
     {% endif %}
     {% if post.date %}<p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {{ post.date | date: '%B %d, %Y' }}</p>{% endif %}
     {% if post.venue %}<p class="archive__item-excerpt" itemprop="description">{{post.type}}, {{ post.venue }},  {{post.location}} {% endif %}
-    {% if post.excerpt %}
-    {% if site.read_more == 'enabled' %}
-      <p class="archive__item-excerpt" itemprop="description">
-        <p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}
-          <strong>
-            <br>
-            <a href="{{ base_path }}{{ post.url }}" rel="permalink">Read more</a>
-            {% if post.recording %} · <a href="{{ post.recording }}">Recording</a>{% endif %}
-            {% if post.slides %} · <a href="{{ post.slides }}">Slides</a>{% endif %}
-          </strong>
-      </p>
-    {% else %}
-      <p class="archive__item-excerpt" itemprop="description">
-        {{ post.excerpt | markdownify }}
-      </p>
+
+    {% if post.excerpt != "" %}
+      <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
     {% endif %}
-  {% endif %}
+
+    <p class="archive__item-actions">
+      <a class="btn btn--primary btn--small" href="{{ base_path }}{{ post.url }}" rel="permalink">Read the post</a>
+      {% if post.paperurl %}
+        <a class="btn btn--small" href="{{ post.paperurl }}">Read the paper</a>
+      {% endif %}
+      {% if post.recording %}
+        <a class="btn btn--small" href="{{ post.recording }}">See the talk recording</a>
+      {% endif %}
+      {% if post.slides %}
+        <a class="btn btn--small" href="{{ post.slides }}">See the slides</a>
+      {% endif %}
+    </p>
   </article>
 </div>

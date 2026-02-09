@@ -66,9 +66,6 @@ audio:not([controls]) {
   display: none;
 }
 
-a {
-  color: $link-color;
-}
 
 /* Apply focus state */
 
@@ -82,6 +79,18 @@ a:hover,
 a:active {
   outline: 0;
 }
+
+a {
+  color: $link-color;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: $link-color-hover;
+  text-decoration: underline;
+}
+
 
 /* Prevent sub and sup affecting line-height in all browsers */
 
@@ -176,4 +185,9 @@ input[type="search"]::-webkit-search-cancel-button {
 textarea {
   overflow: auto; /* remove vertical scrollbar in IE6-9*/
   vertical-align: top; /* readability and alignment cross-browser*/
+}
+
+/* table links more presence */
+table a {
+  font-weight: 500;
 }
