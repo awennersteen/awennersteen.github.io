@@ -11,26 +11,6 @@ redirect_from:
   - /about.html
 ---
 
-<style>
-  table{
-    border: none;
-    border-collapse: collapse;
-  }
-  td, tr {
-    border: none;
-  }
-  th {
-    border: none;
-    display: none;
-  }
-  h2 {
-    text-align: center;
-  }
-  a {
-    white-space:nowrap;
-  }
-</style>
-
 Aleksander is a physicist turned software engineer working at the intersection of quantum computing, artificial intelligence, and high-performance computing.
 Throughout my career I've been pushing the boundaries of what's possible with technology, I thrive on tackling complex challenges and pioneering innovative solutions.
 So far I've worked in quantum computing, artificial intelligence/machine learning, and high performance computing.
@@ -59,12 +39,16 @@ For example I have tried to applied them to areas like TravelTech and PropTech.
 
 ## Selected Blog Posts
 
+{: .page-features-table .cols-2}
+
 |  |  |
 |--------|--------|
 | [Recreating Gandalf by Lakera](./posts/2024/07/gandalf/) | LLM Prompt security: recreating the game and prompt security features directly in OpenAIs ChatGPT |
 
 
 ## Selected Publications
+
+{: .page-features-table .cols-2}
 
 |  |  |
 |--------|--------|
@@ -75,7 +59,9 @@ For example I have tried to applied them to areas like TravelTech and PropTech.
 
 ## Recent and Upcoming Talks and Events
 
-|  |  |
+{: .page-features-table .cols-50-25-25}
+
+|  |  |  |
 |--------|--------|--------|
 | [OCP EMEA Summit (Barcelona)](./talks/2026-04-29-OCP-EMEA) | 04/29/2026 |  |
 | [OpenQSE (Online)](./talks/2026-01-19-OpenQSE) | 01/19/2026 | [Recording](https://www.youtube.com/watch?v=DoRbE9p2LuM) |

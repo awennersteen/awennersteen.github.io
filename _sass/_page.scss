@@ -405,3 +405,114 @@
   color: inherit;
   margin: 2rem 0;
 }
+
+.page-features-table {
+
+  h2 {
+    text-align: center;
+  }
+  table {
+    border: none !important;
+    box-shadow: none;
+    background: transparent;
+    border-collapse: collapse;
+  }
+
+  td, tr, th {
+    border: none;
+  }
+
+  th {
+    display: none;
+  }
+
+  thead {
+    display: none;
+  }
+
+  a {
+    white-space: wrap;
+  }
+
+  @include breakpoint($x-large) {
+    a {
+      white-space: nowrap;
+    }
+  }
+}
+
+.page-features-table table {
+  border: 0;
+  outline: 0;
+}
+
+.page-features-table {
+  border: 0;
+}
+
+.page-features-table td:first-child a {
+  font-weight: 600;
+}
+
+#speaker-bio {
+  margin-top: 1.5rem;
+}
+
+#selected-blog-posts,
+#selected-publications,
+#recent-and-upcoming-talks-and-events {
+  text-align: center;
+}
+
+.page-features-table {
+  width: 100%;
+  table-layout: fixed;     // critical. makes equal widths actually stick
+  border-collapse: collapse;
+
+  // optional, but usually improves layout stability
+  td, th {
+    vertical-align: top;
+    overflow-wrap: anywhere;
+  }
+}
+
+// Equal-width column presets
+.page-features-table.cols-2 td,
+.page-features-table.cols-2 th { width: 50%; }
+
+.page-features-table.cols-3 td,
+.page-features-table.cols-3 th { width: 33.3333%; }
+
+.page-features-table.cols-4 td,
+.page-features-table.cols-4 th { width: 25%; }
+
+
+
+// 50 / 25 / 25 layout
+.page-features-table.cols-50-25-25 {
+  td:nth-child(1),
+  th:nth-child(1) { width: 50%; }
+
+  td:nth-child(2),
+  th:nth-child(2) { width: 25%; }
+
+  td:nth-child(3),
+  th:nth-child(3) { width: 25%; }
+}
+
+.page-features-table.cols-50-25-25 {
+  td:nth-child(2),
+  td:nth-child(3) {
+    text-align: center;
+  }
+}
+
+.page-features-table.cols-50-25-25 td:nth-child(3) {
+  text-align: right;
+}
+
+@include breakpoint($small) {
+  .page-features-table.cols-50-25-25 {
+    table-layout: auto;
+  }
+}
