@@ -118,6 +118,8 @@ exclude:
   - Rakefile
   - README
   - tmp
+  - vendor
+  - vendor/bundle
 keep_files:
   - .git
   - .svn
