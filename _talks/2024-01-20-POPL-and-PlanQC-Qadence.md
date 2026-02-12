@@ -4,11 +4,14 @@ collection: talks
 type: "Talk"
 permalink: /talks/2024-01-20-PlanQC24-Qadence
 venue: "Institution of Engineering and Technology"
+event: "POPL 2024"
 recording: "https://www.youtube.com/watch?v=2WwZO42-btc"
 slides: "https://www.slideshare.net/slideshow/qadence-a-differentiable-interface-for-digital-analog-quantum-programs/274580740"
 date: 2024-01-20
 location: "London, UK"
+description: "Talk at PLanQC 2024 (POPL 2024) introducing Qadence, a differentiable interface for digital-analog quantum programs, plus lessons from PL research."
 excerpt: "I gave a talk about our digital-analog programming language Qadence at the Fourth International Workshop on Programming Languages for Quantum Computing (PLanQC 2024) at the 51st ACM SIGPLAN Symposium on Principles of Programming Languages (POPL 2024)."
+feature_text: "A talk on Qadence, Pasqal's differentiable interface for digital-analog quantum programs, to a programming language research audience."
 ---
 
 The Fourth International Workshop on Programming Languages for Quantum Computing (PLanQC 2024) at the

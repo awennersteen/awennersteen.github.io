@@ -16,8 +16,11 @@
       {% capture f_url %}{{ f.url | prepend: base_path }}{% endcapture %}
     {% endif %}
 
-    <div class="feature__item{% if include.type %}--{{ include.type }}{% endif %}">
+    <div class="feature__item{% if include.type %}--{{ include.type }}{% endif %}{% if include.card_class %} {{ include.card_class }}{% endif %}">
       <div class="archive__item">
+        {% if include.card_class contains "featured-cards__card" %}
+          <span class="featured-cards__badge">FEATURED</span>
+        {% endif %}
         {% if f.image_path %}
           <div class="archive__item-teaser">
             <img src=
@@ -41,8 +44,19 @@
             </div>
           {% endif %}
 
-          {% if f.url %}
-            <p><a href="{{ f_url }}" class="btn {{ f.btn_class }}">{{ f.btn_label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a></p>
+          {% if f.buttons %}
+            <p class="archive__item-actions">
+            {% for b in f.buttons %}
+              {% if b.url contains "://" %}
+                {% capture b_url %}{{ b.url }}{% endcapture %}
+              {% else %}
+                {% capture b_url %}{{ b.url | prepend: base_path }}{% endcapture %}
+              {% endif %}
+              <a href="{{ b_url }}" class="btn {{ b.btn_class }}">{{ b.label }}</a>
+            {% endfor %}
+            </p>
+          {% elsif f.url %}
+            <p class="archive__item-actions"><a href="{{ f_url }}" class="btn {{ f.btn_class }}">{{ f.btn_label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a></p>
           {% endif %}
         </div>
       </div>

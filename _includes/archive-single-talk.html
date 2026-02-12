@@ -36,7 +36,47 @@
       <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
     {% endif %}
     {% if post.date %}<p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {{ post.date | date: '%B %d, %Y' }}</p>{% endif %}
-    {% if post.venue %}<p class="archive__item-excerpt" itemprop="description">{{post.type}}, {{ post.venue }},  {{post.location}} {% endif %}
+    {% assign meta_parts = "" | split: "" %}
+    {% if post.date %}
+      {% capture date_label %}{{ post.date | date: '%b %Y' }}{% endcapture %}
+      {% assign meta_parts = meta_parts | push: date_label %}
+    {% endif %}
+    {% assign venue_label = post.event | default: post.venue | default: post.type %}
+    {% if venue_label %}
+      {% assign meta_parts = meta_parts | push: venue_label %}
+    {% endif %}
+    {% assign title_has_parens = false %}
+    {% if post.title contains '(' %}
+      {% if post.title contains ')' %}
+        {% assign title_has_parens = true %}
+      {% endif %}
+    {% endif %}
+    {% assign location_label = post.location %}
+    {% if location_label %}
+      {% if title_has_parens %}
+        {% assign location_label = nil %}
+      {% elsif venue_label and venue_label contains location_label %}
+        {% assign location_label = nil %}
+      {% endif %}
+    {% endif %}
+    {% if location_label %}
+      {% assign location_parts = location_label | split: "," %}
+      {% if location_parts.size >= 3 %}
+        {% assign start_index = location_parts.size | minus: 2 %}
+        {% assign location_parts = location_parts | slice: start_index, 2 %}
+        {% assign location_label = location_parts | join: ", " | strip %}
+      {% else %}
+        {% assign start_index = location_parts.size | minus: 1 %}
+        {% assign location_parts = location_parts | slice: start_index, 1 %}
+        {% assign location_label = location_parts | join: ", " | strip %}
+      {% endif %}
+      {% if location_label != "" %}
+        {% assign meta_parts = meta_parts | push: location_label %}
+      {% endif %}
+    {% endif %}
+    {% if meta_parts.size > 0 %}
+      <p class="archive__item-meta archive__item-meta--compact">{{ meta_parts | join: " · " }}</p>
+    {% endif %}
 
     {% if post.excerpt != "" %}
       <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>

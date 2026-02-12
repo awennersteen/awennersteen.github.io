@@ -43,7 +43,9 @@ For example I have tried to applied them to areas like TravelTech and PropTech.
 
 |  |  |
 |--------|--------|
-| [Recreating Gandalf by Lakera](./posts/2024/07/gandalf/) | LLM Prompt security: recreating the game and prompt security features directly in OpenAIs ChatGPT |
+| [Recreating Gandalf by Lakera](./posts/2024/07/gandalf/) | Rebuilding Lakera's Gandalf prompt-injection game with a plain LLM to make failure modes concrete and highlight input/output controls. |
+| [Microservices are technical debt](./posts/2026/02/microservices-are-technical-debt/) | When microservices help, when they hurt, and how to avoid a distributed monolith by defaulting to a modular monolith. |
+| [Not just GenAI: difficulty of productionising deeptech](./posts/2026/02/not-just-genai-difficulty-of-productionising-deeptech/) | Why production outcomes lag demos, and how evaluation, data boundaries, and cost control determine adoption. |
 
 
 ## Selected Publications
@@ -72,4 +74,3 @@ For example I have tried to applied them to areas like TravelTech and PropTech.
 ### Speaker Bio
 
 Aleksander Wennersteen is Technical Lead for Quantum-Centric HPC at Pasqal where he focuses on integrating quantum computing with classical HPC systems and the development of hybrid quantum-classical workflows. Previously at Pasqal he was a quantum software engineer and technical lead working on quantum libraries, cloud platform and numerical simulation of quantum systems. He holds a master's degree in Mathematical Physics from the University of Edinburgh. Before joining PASQAL, Aleksander worked in high-performance computing and artificial intelligence.
-

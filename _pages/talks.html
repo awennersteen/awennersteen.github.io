@@ -5,7 +5,89 @@ permalink: /talks/
 author_profile: true
 seo_image: images/awennersteen.jpg
 description: "Overview over talks given by Aleksander"
+classes: page--features
+featured_talks:
+  - /talks/2026-01-16-OCP
+  - /talks/2025-02-02-FOSDEM
+  - /talks/2024-01-20-PlanQC24-Qadence
 ---
+
+<p>Interested in inviting me to speak? <a href="mailto:{{ site.author.email }}">Send me an email</a>.</p>
+<div class="featured-cards">
+  <div class="featured-cards__grid">
+    <div class="feature__wrapper">
+      {% for featured_url in page.featured_talks %}
+        {% assign featured_talk = site.talks | where: "url", featured_url | first %}
+        {% if featured_talk %}
+          {% assign talk_excerpt = featured_talk.feature_text | default: featured_talk.excerpt | default: featured_talk.description %}
+          <div class="feature__item featured-cards__card featured-talks__card">
+            <div class="archive__item">
+              <span class="featured-cards__badge">FEATURED</span>
+              <div class="archive__item-body">
+                <h2 class="archive__item-title">{{ featured_talk.title }}</h2>
+                {% assign meta_parts = "" | split: "" %}
+                {% if featured_talk.date %}
+                  {% capture date_label %}{{ featured_talk.date | date: '%b %Y' }}{% endcapture %}
+                  {% assign meta_parts = meta_parts | push: date_label %}
+                {% endif %}
+                {% assign venue_label = featured_talk.event | default: featured_talk.venue | default: featured_talk.type %}
+                {% if venue_label %}
+                  {% assign meta_parts = meta_parts | push: venue_label %}
+                {% endif %}
+                {% assign title_has_parens = false %}
+                {% if featured_talk.title contains '(' %}
+                  {% if featured_talk.title contains ')' %}
+                    {% assign title_has_parens = true %}
+                  {% endif %}
+                {% endif %}
+                {% assign location_label = featured_talk.location %}
+                {% if location_label %}
+                  {% if title_has_parens %}
+                    {% assign location_label = nil %}
+                  {% elsif venue_label and venue_label contains location_label %}
+                    {% assign location_label = nil %}
+                  {% endif %}
+                {% endif %}
+                {% if location_label %}
+                  {% assign location_parts = location_label | split: "," %}
+                  {% if location_parts.size >= 3 %}
+                    {% assign start_index = location_parts.size | minus: 2 %}
+                    {% assign location_parts = location_parts | slice: start_index, 2 %}
+                    {% assign location_label = location_parts | join: ", " | strip %}
+                  {% else %}
+                    {% assign start_index = location_parts.size | minus: 1 %}
+                    {% assign location_parts = location_parts | slice: start_index, 1 %}
+                    {% assign location_label = location_parts | join: ", " | strip %}
+                  {% endif %}
+                  {% if location_label != "" %}
+                    {% assign meta_parts = meta_parts | push: location_label %}
+                  {% endif %}
+                {% endif %}
+                {% if meta_parts.size > 0 %}
+                  <p class="archive__item-meta archive__item-meta--compact">{{ meta_parts | join: " · " }}</p>
+                {% endif %}
+                {% if talk_excerpt %}
+                  <div class="archive__item-excerpt">
+                    {{ talk_excerpt | markdownify }}
+                  </div>
+                {% endif %}
+                <p class="archive__item-actions">
+                  <a href="{{ featured_talk.url | prepend: base_path }}" class="btn btn--primary btn--small">Post</a>
+                  {% if featured_talk.recording %}
+                    <a href="{{ featured_talk.recording }}" class="btn btn--small">Recording</a>
+                  {% endif %}
+                  {% if featured_talk.slides %}
+                    <a href="{{ featured_talk.slides }}" class="btn btn--small">Slides</a>
+                  {% endif %}
+                </p>
+              </div>
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
 
 {% for post in site.talks reversed %}
   {% include archive-single-talk.html %}

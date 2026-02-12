@@ -4,11 +4,76 @@ permalink: /posts/
 title: "Musings"
 author_profile: true
 description: "A tech blog on software, quantum, AI and anything else by Aleksander Wennersteen."
+classes: page--features
 redirect_from:
   - /musings
+featured_posts:
+  - /posts/2024/07/gandalf/
+  - /posts/2026/02/microservices-are-technical-debt/
+  - /posts/2026/02/not-just-genai-difficulty-of-productionising-deeptech/
 ---
 
 {% include base_path %}
+<p>Short essays and notes on software, quantum, AI, and the engineering practice behind them.</p>
+{% assign category_archive_type = site.category_archive.type | default: "liquid" %}
+{% assign category_counts = "" | split: "" %}
+{% for category in site.categories %}
+  {% assign name = category[0] %}
+  {% assign count = category[1] | size %}
+  {% capture item %}{{ count | prepend: "0000" | slice: -4,4 }}::{{ name }}{% endcapture %}
+  {% assign category_counts = category_counts | push: item %}
+{% endfor %}
+{% assign category_counts = category_counts | sort | reverse %}
+{% assign top_categories = category_counts | slice: 0, 8 %}
+<div class="featured-cards">
+  <div class="featured-cards__grid">
+    <div class="feature__wrapper">
+      {% for featured_url in page.featured_posts %}
+        {% assign featured_post = site.posts | where: "url", featured_url | first %}
+        {% if featured_post %}
+          <div class="feature__item featured-cards__card">
+            <div class="archive__item">
+              <span class="featured-cards__badge">FEATURED</span>
+              <div class="archive__item-body">
+                <h2 class="archive__item-title">{{ featured_post.title }}</h2>
+        {% assign featured_excerpt = featured_post.feature_text | default: featured_post.excerpt %}
+        {% if featured_excerpt %}
+          <div class="archive__item-excerpt">
+            {{ featured_excerpt | markdownify }}
+          </div>
+        {% endif %}
+                <p class="archive__item-actions">
+                  <a href="{{ featured_post.url | prepend: base_path }}" class="btn btn--primary">Read</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<div class="taxonomy-chips">
+  <span class="taxonomy-chips__label">Browse by category</span>
+  <div class="taxonomy-chips__list">
+    {% for item in top_categories %}
+      {% assign parts = item | split: "::" %}
+      {% assign count = parts[0] | plus: 0 %}
+      {% assign name = parts[1] %}
+      {% assign slug = name | slugify %}
+      {% if category_archive_type == "jekyll-archives" %}
+        {% assign category_url = base_path | append: "/categories/" | append: slug | append: "/" %}
+      {% else %}
+        {% assign category_url = base_path | append: "/categories/#" | append: slug %}
+      {% endif %}
+      <a class="taxonomy-chip" href="{{ category_url }}">
+        <span class="taxonomy-chip__name">{{ name }}</span>
+        <span class="taxonomy-chip__count">{{ count }}</span>
+      </a>
+    {% endfor %}
+    <a class="taxonomy-chip taxonomy-chip--all" href="{{ base_path }}/categories/">All categories</a>
+  </div>
+</div>
 {% capture written_year %}'None'{% endcapture %}
 {% for post in site.posts %}
   {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}

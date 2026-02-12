@@ -6,6 +6,8 @@ permalink: /talks/2025-06-26-CETRARO
 venue: "HPC 25"
 date: 2025-06-26
 location: "Cetraro, Italy"
+description: "Talk at the HPC 2025 workshop in Cetraro on neutral-atom QPUs and the path toward quantum-classical supercomputing, from infrastructure to scheduling."
+excerpt: "A talk at the International Advanced Research Workshop on High Performance Computing in Cetraro on Pasqal's strategy toward quantum-centric supercomputing. I focus on neutral-atom QPUs and what integration looks like in practice: infrastructure, co-processing workflows, and scheduling."
 ---
 
 I had the pleasure of attending the 32nd edition of the invite-only "International Advanced Research Workshop on High Performance Computing"

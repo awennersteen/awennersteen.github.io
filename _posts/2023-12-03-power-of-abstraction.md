@@ -2,8 +2,10 @@
 title: 'Power of abstraction'
 date: 2023-12-03
 permalink: /posts/2023/12/abstractions/
-description: "A reflection on how abstraction enables better software and mathematical thinking, managing complexity and improving performance through structured concepts."
-excerpt: "This essay discusses the role of abstraction in programming and mathematics, showing how focusing on high-level structures can manage complexity, enhance readability, and inform performance-oriented design."
+description: "Understand how software engineering best practices in abstraction reduce complexity and improve system architecture without sacrificing performance."
+excerpt: "A reflection on abstraction in programming and mathematics, and on the tension between clean interfaces and performance realities. I connect this to AoS vs SoA, to optimizer placement, and to lessons learned building Qadence."
+categories:
+  - "Technical Leadership & Engineering Practice"
 tags:
   - mathematics
   - quantum

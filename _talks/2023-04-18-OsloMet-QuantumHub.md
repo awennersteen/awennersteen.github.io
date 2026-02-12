@@ -6,6 +6,8 @@ permalink: /talks/2023-04-18-OsloMet-QuantumHub
 venue: "OsloMet University"
 date: 2023-02-01
 location: "Oslo, Norway"
+description: "An introduction to neutral-atom quantum computing for an academic audience in Oslo, focusing on applications, industry reality checks, and what comes next."
+excerpt: "An introduction to neutral-atom quantum computing and applications, given to faculty in Oslo. I was invited after attending QCNorway and used the format to share a more honest view of commercial constraints and timelines."
 ---
 
 An introduction to neutral atoms based QC and what we do in industry to the faculties at various institutions in Oslo.

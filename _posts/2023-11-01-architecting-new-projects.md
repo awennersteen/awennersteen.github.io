@@ -2,8 +2,10 @@
 title: 'Architecting new projects'
 date: 2023-11-01
 permalink: /posts/2023/11/architecting
-description: "Practical guidance on starting greenfield software projects, including requirement gathering, strategic planning, and balancing technical design with real-world execution."
-excerpt: "This post shares insights on initiating new software projects, emphasizing the iterative nature of requirements gathering, stakeholder alignment, and balancing technical ambition with maintainable progress."
+description: "Get guidance on project architecture to balance extensibility, performance, and team cognitive load while aligning stakeholders and requirements."
+excerpt: "Starting a greenfield project is an iterative requirements exercise, not a one-shot design task. I share a practical approach to early PoCs, stakeholder alignment, and keeping ambition in check so the codebase stays easy to evolve."
+categories:
+  - "Technical Leadership & Engineering Practice"
 tags:
   - software
 ---

@@ -2,8 +2,10 @@
 title: "Generative AI security"
 date: 2024-07-01
 permalink: /posts/2024/07/genai-security/
-description: "An analytical overview of generative AI and prompt injection risks explaining how LLMs process input and potential security gaps."
-excerpt: "This post explores generative AI, how large language models process prompts, and the threat of prompt injection attacks. Illustrating vulnerabilities and defensive considerations."
+description: "Learn core generative AI security failure modes and LLM safety vulnerabilities to design safer systems, from prompts to retrieval and output handling."
+excerpt: "An overview of how LLMs handle prompts, why prompt injection works, and why multimodal systems widen the attack surface. I use Lakera's Gandalf game as a concrete thread and end with the defensive patterns that actually matter."
+categories:
+  - "AI & ML Systems"
 tags:
   - LLMs
   - GenerativeAI

@@ -2,9 +2,12 @@
 title: "Recreating Gandalf by Lakera"
 date: 2024-07-03
 permalink: /posts/2024/07/gandalf/
-description: "An exploration of Lakera’s Gandalf AI prompt injection challenge and my attempt to recreate its levels using LLM prompting, revealing insights into prompt security"
-excerpt: "I discovered Lakera’s Gandalf game, an educational AI challenge on prompt injections and hallucinations, and tried to recreate its levels using GPT-4o to understand how defenses work and where vulnerabilities appear."
+description: "Learn how prompt reinjection exposes LLM safety vulnerabilities to improve generative AI security with practical prompting defenses and tests."
+excerpt: "I played Lakera's Gandalf prompt-injection game and tried to recreate several levels with a plain LLM and a system prompt. The exercise makes prompt reinjection failures concrete, and highlights why you still need input/output controls beyond prompting."
+feature_text: "Rebuilding Lakera's Gandalf prompt-injection game with a plain LLM to make failure modes concrete and highlight input/output controls."
 seo_image: images/level_1.png
+categories:
+  - "AI & ML Systems"
 tags:
   - LLMs
   - Security
