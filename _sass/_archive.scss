@@ -304,6 +304,30 @@
   }
 }
 
+@include breakpoint(max-width $medium) {
+  .sidebar + .archive .featured-cards {
+    margin-top: 1rem;
+  }
+}
+
+.talks-cta {
+  @extend .page-cta;
+  text-align: left;
+  margin: 0.25rem 0 1rem;
+
+  a {
+    color: $link-color;
+    font-weight: 600;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: $link-color-hover;
+      text-decoration: underline;
+    }
+  }
+}
+
 .featured-cards {
   margin: 0.75em 0 2.5rem;
   padding: 0.5em 0 2rem;
