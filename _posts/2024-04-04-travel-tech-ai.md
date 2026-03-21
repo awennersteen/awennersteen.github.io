@@ -3,7 +3,7 @@ title: "The Future of Travel Tech: How AI is Shaping the Journey Ahead"
 date: 2024-04-04
 permalink: /posts/2024/04/travel-tech/
 description: "Discover structural limits in the travel tech ecosystem and how AI integration reshapes platform architecture, pricing, and customer experience at scale."
-excerpt: "Travel has one of the messiest product surfaces in tech: search, pricing, inventory, and customer service all collide. This post looks at where AI helps, where it breaks incentives, and what that means for platform architecture and user experience."
+excerpt: "Travel tech ecosystem complexity breaks naive AI plans. Search, pricing, inventory, and support pipelines conflict in practice. Set tight system boundaries so AI improves outcomes."
 categories:
   - "Industry & Technology Trends"
 tags:

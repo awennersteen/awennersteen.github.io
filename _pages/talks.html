@@ -7,9 +7,9 @@ seo_image: images/awennersteen.jpg
 description: "Overview over talks given by Aleksander"
 classes: page--features
 featured_talks:
-  - /talks/2026-01-16-OCP
-  - /talks/2025-02-02-FOSDEM
-  - /talks/2024-01-20-PlanQC24-Qadence
+  - /talks/2026-01-16-OCP/
+  - /talks/2025-02-02-FOSDEM/
+  - /talks/2024-01-20-PlanQC24-Qadence/
 ---
 
 <p class="talks-cta">Interested in inviting me to speak? <a href="mailto:{{ site.author.email }}">Send me an email</a>.</p>
@@ -89,9 +89,34 @@ featured_talks:
   </div>
 </div>
 
-{% for post in site.talks reversed %}
-  {% include archive-single-talk.html %}
-{% endfor %}
+{% assign talk_categories = "Quantum-HPC Integration|Quantum Software Engineering|Ecosystem & Events" | split: "|" %}
+<div class="taxonomy-chips">
+  <span class="taxonomy-chips__label">Browse by topic</span>
+  <div class="taxonomy-chips__list">
+    {% for category_name in talk_categories %}
+      {% assign category_talks = site.talks | where_exp: "talk", "talk.categories contains category_name" | sort: "date" | reverse %}
+      {% if category_talks.size > 0 %}
+        <a class="taxonomy-chip" href="#talk-category-{{ category_name | slugify }}">
+          <span class="taxonomy-chip__name">{{ category_name }}</span>
+          <span class="taxonomy-chip__count">{{ category_talks.size }}</span>
+        </a>
+      {% endif %}
+    {% endfor %}
+    <a class="taxonomy-chip taxonomy-chip--all" href="#all-talks">All talks</a>
+  </div>
+</div>
+
+<div id="all-talks">
+  {% for category_name in talk_categories %}
+    {% assign category_talks = site.talks | where_exp: "talk", "talk.categories contains category_name" | sort: "date" | reverse %}
+    {% if category_talks.size > 0 %}
+      <h2 id="talk-category-{{ category_name | slugify }}" class="archive__subtitle">{{ category_name }}</h2>
+      {% for post in category_talks %}
+        {% include archive-single-talk.html %}
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
+</div>
 
 {% if site.talkmap_link == true %}
 <h2>Talk map</h2>

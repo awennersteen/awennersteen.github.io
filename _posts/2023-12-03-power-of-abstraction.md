@@ -3,7 +3,7 @@ title: 'Power of abstraction'
 date: 2023-12-03
 permalink: /posts/2023/12/abstractions/
 description: "Understand how software engineering best practices in abstraction reduce complexity and improve system architecture without sacrificing performance."
-excerpt: "A reflection on abstraction in programming and mathematics, and on the tension between clean interfaces and performance realities. I connect this to AoS vs SoA, to optimizer placement, and to lessons learned building Qadence."
+excerpt: "Abstraction and performance are not enemies. Clean interfaces fail when data layout and optimization boundaries are ignored. Place optimizations at the right layer to keep code fast and maintainable."
 categories:
   - "Technical Leadership & Engineering Practice"
 tags:

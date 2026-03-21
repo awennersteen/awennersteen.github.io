@@ -3,7 +3,7 @@ title: "Microservices are technical debt"
 date: 2026-02-11
 permalink: /posts/2026/02/microservices-are-technical-debt/
 description: "Learn how software engineering best practices help avoid microservices becoming a distributed monolith, and decide when to pay down architecture debt."
-excerpt: "Microservices can help when domain boundaries are real and teams need independent deployment. More often they become a distributed monolith with expensive operations and coordination. This post lays out the warning signs and what I would do instead by default."
+excerpt: "Microservices technical debt accumulates quickly. Weak domain boundaries create a distributed monolith with heavy coordination costs. Default to fewer interfaces until scale proves service splits."
 feature_text: "When microservices help, when they hurt (always), and how to avoid a distributed monolith by defaulting to a modular monolith."
 categories:
   - "Technical Leadership & Engineering Practice"

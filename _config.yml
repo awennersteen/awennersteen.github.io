@@ -286,6 +286,12 @@ whitelist:
   - jekyll-archives
   - jemoji
 
+jekyll-sitemap:
+  exclude:
+    - /tags/
+    - /tags/*
+    - /categories/
+
 
 # Archives
 #  Type

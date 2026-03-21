@@ -3,7 +3,7 @@ title: "Recreating Gandalf by Lakera"
 date: 2024-07-03
 permalink: /posts/2024/07/gandalf/
 description: "Learn how prompt reinjection exposes LLM safety vulnerabilities to improve generative AI security with practical prompting defenses and tests."
-excerpt: "I played Lakera's Gandalf prompt-injection game and tried to recreate several levels with a plain LLM and a system prompt. The exercise makes prompt reinjection failures concrete, and highlights why you still need input/output controls beyond prompting."
+excerpt: "Prompt injection becomes obvious in Lakera's Gandalf game. System prompts alone fail once user text is treated as trusted context. Test reinjection paths to design safer LLM interactions."
 feature_text: "Rebuilding Lakera's Gandalf prompt-injection game with a plain LLM to make failure modes concrete and highlight input/output controls."
 seo_image: images/level_1.png
 categories:

@@ -3,7 +3,7 @@ title: "The Importance of Shipping Early, Often and Incrementally in Software Pr
 date: 2026-02-10
 permalink: /posts/2026/02/importance-of-shipping-early-and-often-also-in-deeptech/
 description: "Learn software engineering best practices for shipping deeptech software early and often to reduce risk, build feedback loops, and align project architecture."
-excerpt: "Deep tech makes it tempting to wait for clarity, but that usually produces demo-ware and long feedback loops. This post argues for shipping thin end-to-end slices early, and for including one real constraint in every increment so the system stays honest."
+excerpt: "Shipping early in deep tech reduces execution risk. Waiting for full clarity creates demo-ware and long feedback loops. Deliver thin end-to-end slices to validate constraints early."
 categories:
   - "Technical Leadership & Engineering Practice"
 tags:
@@ -76,4 +76,4 @@ If every increment contains one non-negotiable constraint, you build something y
 - Make it easy to change the system (tests, clear boundaries, docs that match reality).
 - Keep a tight boundary between “research” and “product” work, even if the same people do both.
 
-If you want a companion post to this, I think this pairs well with [Architecting new projects](https://awennersteen.com/posts/2023/11/architecting) because it’s the same story at a different zoom level: uncertainty is normal, and the process has to assume it.
+If you want a companion post to this, I think this pairs well with [Architecting new projects](https://awennersteen.com/posts/2023/11/architecting/) because it’s the same story at a different zoom level: uncertainty is normal, and the process has to assume it.

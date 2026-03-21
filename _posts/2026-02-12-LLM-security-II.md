@@ -3,7 +3,7 @@ title: "Generative AI security-II"
 date: 2026-02-09
 permalink: /posts/2026/02/genai-security-II/
 description: "Learn practical generative AI security lessons from OWASP and Lakera on prompt injection defenses, including input/output controls and monitoring."
-excerpt: "A practical follow-up on deploying LLM features: treat the model as untrusted, control both prompts and outputs, and assume cost is a product constraint. I map concrete mitigations to the OWASP GenAI Top 10 (2025) and discuss what to look for in an AI gateway."
+excerpt: "Prompt injection defenses must be operational. Treating LLMs as untrusted components exposes controls needed for policy, cost, and audit. Build gateway guardrails before scaling AI features."
 categories:
   - "AI & ML Systems"
 tags:

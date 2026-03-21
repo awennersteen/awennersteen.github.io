@@ -3,7 +3,7 @@ title: "Not just GenAI: difficulty of productionising deeptech"
 date: 2026-02-12
 permalink: /posts/2026/02/not-just-genai-difficulty-of-productionising-deeptech/
 description: "Explore why deeptech and GenAI adoption stalls beyond the lab, and how high performance computing trends and infrastructure shape real products."
-excerpt: "GenAI prototypes are fast, but production outcomes depend on evaluation, data boundaries, and cost control. I connect today's enterprise adoption slowdown to older deep-tech patterns, including lessons from production video analytics and the AI infrastructure arms race."
+excerpt: "AI productization fails when demos are mistaken for systems. Adoption slows when evaluation, data boundaries, and cost controls are missing. Build operating discipline to make prototypes reliable."
 feature_text: "Why production outcomes lag demos, and how evaluation, data boundaries, and cost control determine adoption."
 categories:
   - "Industry & Technology Trends"

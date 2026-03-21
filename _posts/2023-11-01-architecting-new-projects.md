@@ -1,9 +1,9 @@
 ---
 title: 'Architecting new projects'
 date: 2023-11-01
-permalink: /posts/2023/11/architecting
+permalink: /posts/2023/11/architecting/
 description: "Get guidance on project architecture to balance extensibility, performance, and team cognitive load while aligning stakeholders and requirements."
-excerpt: "Starting a greenfield project is an iterative requirements exercise, not a one-shot design task. I share a practical approach to early PoCs, stakeholder alignment, and keeping ambition in check so the codebase stays easy to evolve."
+excerpt: "Project architecture starts with iterative requirements. Treating greenfield design as one-shot creates brittle code and stakeholder drift. Use small PoCs to align scope, ownership, and evolvability."
 categories:
   - "Technical Leadership & Engineering Practice"
 tags:
