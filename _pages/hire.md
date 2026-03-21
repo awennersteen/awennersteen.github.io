@@ -17,32 +17,58 @@ redirect_from:
 For the time being I'm not actively looking to leave Pasqal for full-time roles.
 I provide senior-level technology consulting and advisory services for organizations working at the frontier of advanced computing.
 My focus is on short-term, high-impact engagements where deep technical judgment and system-level thinking materially influence outcomes.
-I am open to short conversations with early-stage founders working on technically demanding products.
+Always interested in speaking with interesting, early-stage, startups for any reason.
 
-## Engagement formats
+## Where I typically add the most value
 
-### Technical assessment (1-2 weeks)
-- Input: architecture docs, constraints, and target workloads
-- Output: written assessment with key risks, alternatives, and next steps
-- Timebox: 3-10 working days
+### High-level advisory work
 
-### Advisory decision support (single session or short series)
-- Input: decision context, options under consideration, and known trade-offs
-- Output: decision memo with recommended path and rationale
-- Timebox: 60-90 minutes, optional follow-up session
+I also take on **pure advisory engagements**, where the value lies in perspective rather than execution. Examples include:
 
-### Proof-of-concept design review (1-3 weeks)
-- Input: current prototype, success criteria, and integration boundaries
-- Output: scoped technical plan covering architecture, validation, and delivery sequence
-- Timebox: 1-3 weeks
+- Investor expert consulting for  market intelligence
+- HPC-AI-Quantum worldview
+- Evaluating emerging technologies beyond vendor narratives
 
-### Technical leadership support (retainer or fixed sprint)
-- Input: current team setup, product roadmap, and operating constraints
-- Output: prioritized execution guidance for architecture, tooling, and engineering practice
-- Timebox: 2-6 weeks for fixed sprint, or monthly advisory cadence
+These engagements are typically short, focused, and decision-oriented.
+
+### Proof-of-concept design and evaluation
+
+I advise on and contribute to **proof-of-concept projects**, particularly where advanced numerical methods or non-standard algorithms are involved, including:
+
+- Machine learning and computer vision
+- Quantum computing and simulation
+- HPC-oriented or performance-critical workloads
+
+An experienced hand at the POC stage often saves significant time and cost by avoiding mis-scoping, over-engineering, or unrealistic expectations.
+
+### Strategic and architectural decision-making
+
+Organizations often reach inflection points where incremental optimization is no longer sufficient.
+I support leadership teams with **technical reviews** in areas such as:
+
+- Artificial intelligence and machine learning systems
+- Quantum computing and hybrid quantum–classical workflows
+- High-performance computing and workload orchestration
+- Integration of advanced computing into production environments
+
+My role is to clarify trade-offs, challenge assumptions, and help align technical decisions with business realities.
+
+### Technical leadership support for startups and scale-ups
+
+Having experienced multiple growth phases first-hand, from early teams to organizations with hundreds of engineers, I help companies navigate technical and organizational pitfalls that emerge as they scale.
+Typical engagements include:
+
+
+- Technical due diligence and second opinions
+- Architecture, tooling, and engineering practice reviews
+- Advisory support to CTOs and technical founders
+- Acting as an external counterpart to in-house or outsourced teams
+
+The goal is not to replace your team, but to strengthen decision-making at critical moments.
+
 
 ## Get in touch
 
-Email me with: context, decision to make, timeline, constraints.
+If you are facing a complex decision or just want an informed external perspective, feel free to reach out.
 
 You can contact me directly by [email](mailto:awennersteen@gmail.com) to discuss whether a collaboration makes sense.
