@@ -4,7 +4,7 @@ title: "Talks and presentations"
 permalink: /talks/
 author_profile: true
 seo_image: images/awennersteen.jpg
-description: "Overview over talks given by Aleksander"
+description: "Talks and presentations by Aleksander Wennersteen on quantum-HPC integration, AI systems, software engineering, and infrastructure operations across conferences and workshops."
 classes: page--features
 featured_talks:
   - /talks/2026-01-16-OCP/
@@ -27,7 +27,7 @@ featured_talks:
                 <h2 class="archive__item-title">{{ featured_talk.title }}</h2>
                 {% assign meta_parts = "" | split: "" %}
                 {% if featured_talk.date %}
-                  {% capture date_label %}{{ featured_talk.date | date: '%b %Y' }}{% endcapture %}
+                  {% capture date_label %}{{ featured_talk.date | date: '%b %-d, %Y' }}{% endcapture %}
                   {% assign meta_parts = meta_parts | push: date_label %}
                 {% endif %}
                 {% assign venue_label = featured_talk.event | default: featured_talk.venue | default: featured_talk.type %}

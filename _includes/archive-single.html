@@ -34,7 +34,17 @@
       {% endif %}
     </h2>
     
-    {% if post.read_time %}
+    {% if post.collection == 'posts' and (post.read_time or post.date) %}
+      <p class="page__meta">
+        {% if post.read_time %}
+          <i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}
+        {% endif %}
+        {% if post.date %}
+          {% if post.read_time %} · {% endif %}
+          <i class="fa fa-calendar" aria-hidden="true"></i> {{ post.date | date: "%B %-d, %Y" }}
+        {% endif %}
+      </p>
+    {% elsif post.read_time %}
       <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
     {% endif %}
 

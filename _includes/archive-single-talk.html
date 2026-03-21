@@ -35,10 +35,9 @@
     {% if post.read_time %}
       <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
     {% endif %}
-    {% if post.date %}<p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {{ post.date | date: '%B %d, %Y' }}</p>{% endif %}
     {% assign meta_parts = "" | split: "" %}
     {% if post.date %}
-      {% capture date_label %}{{ post.date | date: '%b %Y' }}{% endcapture %}
+      {% capture date_label %}{{ post.date | date: '%b %-d, %Y' }}{% endcapture %}
       {% assign meta_parts = meta_parts | push: date_label %}
     {% endif %}
     {% assign venue_label = post.event | default: post.venue | default: post.type %}

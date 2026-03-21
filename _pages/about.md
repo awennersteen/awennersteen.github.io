@@ -61,7 +61,7 @@ For example I have tried to applied them to areas like TravelTech and PropTech.
 |--------|--------|
 | [User Centric HPC-QC Environment](./publications/2025-11-16-user-centric-qhpc/) | QC-HPC software stack and integration model: Introducing Pasqal's new HPC-QC middleware including a 2nd level quantum scheduler |
 | [Quantum Resources in Resource Management Systems](./publications/2025-06-11-qrmi/) | The Quantum Resource Management Interface (QRMI) and its Slurm integration via SPANK plugins. |
-| [Qadence](./publications/2025-02-03-qadence) |  A digital and analog quantum DSL and framework that is fully differentiable built on PyTorch's AutoGrad engine |
+| [Qadence](./publications/2025-02-03-qadence/) |  A digital and analog quantum DSL and framework that is fully differentiable built on PyTorch's AutoGrad engine |
 
 
 ## Recent and Upcoming Talks and Events
@@ -71,9 +71,9 @@ For example I have tried to applied them to areas like TravelTech and PropTech.
 |  |  |  |
 |--------|--------|--------|
 | [Munich Quantum Software Forum (TUM)](./talks/2026-10-14-MQSF/) | 10/14-10/15/2026 |  |
-| [OCP EMEA Summit (Barcelona)](./talks/2026-04-29-OCP-EMEA) | 04/29/2026 |  |
+| [OCP EMEA Summit (Barcelona)](./talks/2026-04-29-OCP-EMEA/) | 04/29/2026 |  |
 | [OpenQSE (Online)](./talks/2026-01-19-OpenQSE/) | 01/19/2026 | [Recording](https://www.youtube.com/watch?v=DoRbE9p2LuM) |
-| [OCP FTI (Online)](./talks/2026-01-16-OCP) |  01/16/2026 | [Recording](https://www.youtube.com/watch?v=v0u9uy1K8Aw) |
+| [OCP FTI (Online)](./talks/2026-01-16-OCP/) |  01/16/2026 | [Recording](https://www.youtube.com/watch?v=v0u9uy1K8Aw) |
 
 
 

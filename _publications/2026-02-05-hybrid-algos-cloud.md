@@ -1,7 +1,9 @@
 ---
 title: "Hybrid Quantum-Classical Algorithms: A Cloud On-Demand Viewpoint"
 collection: publications
-permalink: /publications/2025-02-06-hybrid-algos-cloud/
+permalink: /publications/2026-02-05-hybrid-algos-cloud/
+redirect_from:
+  - /publications/2025-02-06-hybrid-algos-cloud/
 excerpt: 'In the last decade, advances in quantum technologies have allowed for the rapid development of industrialized quantum processing units. These new devices exploit the laws of quantum mechanics to perform complex calculations. Quantum processing units require new ways of thinking and programming. In particular, these new algorithms will be hybrid, with part of the computation performed on classical high-performance computing hardware and part on the dedicated quantum hardware. At Pasqal, we have developed a cloud platform hosting a neutral atom quantum processing unit (QPU) operating in the analog paradigm and a series of hybrid quantum classical algorithms that cover applications such as quantum optimization, quantum machine learning and quantum simulation. In this paper, we will show how this platform is used during the execution of real workloads.'
 date: 2026-02-05
 venue: 'QUEST-IS 2025 in Springer Communications in Computer and Information Science'
