@@ -1,0 +1,16 @@
+---
+title: "Integrating Quantum Processing Units into Data Center Infrastructure"
+collection: publications
+permalink: /publications/2026-04-14-integrating-qpus-dc-infrastructure/
+excerpt: 'Quantum deployments are moving from lab environments and small private data centers toward production deployments in larger third-party data centers. This Open Compute Project white paper identifies common architectural, operational, and integration considerations for deploying quantum processing units in data center infrastructure, with emphasis on the physical and logical requirements needed for production-scale quantum systems.'
+date: 2026-04-14
+venue: 'Open Compute Project white paper'
+paperurl: 'https://www.opencompute.org/documents/integrating-qpus-into-dc-infrastructure-pdf'
+---
+
+This [white paper](https://www.opencompute.org/documents/integrating-qpus-into-dc-infrastructure-pdf) is available from the Open Compute Project.
+
+The work was authored by contributors from the National Quantum Computing Centre, Open Compute Project, D-Wave, Dell Technologies, Diraq, Fujitsu, Infleqtion, IonQ, IQM, Maybell, ORCA Computing, Oxford Quantum Circuits, Pasqal, Qblox, Quantum Brilliance, Zero Point Cryogenics, and ZPT Corp.
+
+The paper abstract is:
+> Quantum computing, communication, sensing and simulation aren't just incremental improvements to the classical ways of doing things but represents a significant paradigm shift. The datacenters needed to deploy quantum require a similar paradigm shift. Current deployments of quantum computers are typically done in bespoke environments such as lab environments, small private datacenters, etc. and not at scale in larger third party datacenters. The Open Compute Project (OCP) is actively addressing these integration hurdles through its Future Technologies Initiative (FTI), specifically within the "Data Center Integration of Quantum Information Infrastructure" workstream.
