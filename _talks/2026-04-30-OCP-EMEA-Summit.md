@@ -5,6 +5,8 @@ type: "Talk"
 permalink: /talks/2026-04-30-OCP-EMEA/
 event: "OCP EMEA Summit 2026"
 venue: "Barcelona International Convention Center (CCIB)"
+recording: "https://youtu.be/Dmtd9GP0Fcw?is=1OzRWzTgTA91wLzs"
+slides: "https://www.opencompute.org/summit/ocp-future-technologies-symposium/past-symposium-events"
 date: 2026-04-30
 location: "Barcelona, Spain"
 categories:
@@ -13,11 +15,11 @@ description: "OCP EMEA Summit 2026 talk introducing QRMI as open, vendor-neutral
 excerpt: "Quantum processors need to become first-class resources inside compute infrastructure. I introduce QRMI as open, vendor-neutral middleware for orchestration, observability, and maintenance."
 ---
 
-I am giving this talk at the [Open Compute Project EMEA Summit](https://www.opencompute.org/summit/emea-summit)
+I gave a talk on QRMI and general control-plane quantum middleware at the [Open Compute Project EMEA Summit](https://www.opencompute.org/summit/emea-summit)
 in the FTS Quantum track.
 
-Time: Thursday, April 30, 2026, 15:45-16:00  
-Room: Level P1 - 118/119
+The [recording](https://youtu.be/Dmtd9GP0Fcw?is=1OzRWzTgTA91wLzs) is available on YouTube.
+And you can find the [slides in this overview](https://www.opencompute.org/summit/ocp-future-technologies-symposium/past-symposium-events).
 
 Abstract:
 > Quantum processors are transitioning from laboratory systems to infrastructure components that must integrate into general-purpose data centers. Real adoption requires that QPUs be exposed as first-class resources alongside classical hardware for orchestration, observability and maintenance.

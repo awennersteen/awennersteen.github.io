@@ -72,7 +72,7 @@ For example I have tried to applied them to areas like TravelTech and PropTech.
 |--------|--------|--------|
 | [Munich Quantum Software Forum (TUM)](./talks/2026-10-14-MQSF/) | 10/14-10/15/2026 |  |
 | [ISC High Performance (Hamburg)](./talks/2026-06-23-ISC26-BoF/) | 06/22-06/26/2026 |  |
-| [OCP EMEA Summit (Barcelona)](./talks/2026-04-30-OCP-EMEA/) | 04/30/2026 |  |
+| [OCP EMEA Summit (Barcelona)](./talks/2026-04-30-OCP-EMEA/) | 04/30/2026 | [Recording](https://youtu.be/Dmtd9GP0Fcw?is=1OzRWzTgTA91wLzs) |
 | [OpenQSE (Online)](./talks/2026-01-19-OpenQSE/) | 01/19/2026 | [Recording](https://www.youtube.com/watch?v=DoRbE9p2LuM) |
 | [OCP FTI (Online)](./talks/2026-01-16-OCP/) |  01/16/2026 | [Recording](https://www.youtube.com/watch?v=v0u9uy1K8Aw) |
 
