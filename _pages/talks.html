@@ -24,7 +24,7 @@ featured_talks:
             <div class="archive__item">
               <span class="featured-cards__badge">FEATURED</span>
               <div class="archive__item-body">
-                <h2 class="archive__item-title">{{ featured_talk.title }}</h2>
+                <h2 class="archive__item-title"><a href="{{ featured_talk.url | prepend: base_path }}">{{ featured_talk.title }}</a></h2>
                 {% assign meta_parts = "" | split: "" %}
                 {% if featured_talk.date %}
                   {% capture date_label %}{{ featured_talk.date | date: '%b %-d, %Y' }}{% endcapture %}

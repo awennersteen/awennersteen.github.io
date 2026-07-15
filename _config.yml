@@ -36,20 +36,18 @@ og_image                 :  /images/awennersteen.jpg # Open Graph/Twitter defaul
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
+  type                   : Person
   name                   : "Aleksander Wennersteen" # If the user or organization name differs from the site's name
   links:
     - "https://www.linkedin.com/in/awennersteen"
     - "https://ieeexplore.ieee.org/author/174901648336142"
     - "https://dl.acm.org/profile/99661753766"
     - "https://orcid.org/0009-0006-5486-0980"
-    - "https://awennersteen.medium.com"
     - "https://github.com/awennersteen"
     - "https://x.com/awennersteen"
     - "https://bsky.app/profile/awennersteen.bsky.social"
-    - "https://scholar.google.com/citations?user=Qr1PnGAAAAAJ&hl=en"
-    - "https://www.slideshare.net/awennersteen"
-    - "https://youtube.com/@awennersteen"
+    - "https://scholar.google.com/citations?user=Qr1PnGAAAAAJ"
+    - "https://www.youtube.com/@awennersteen"
   alumniOf: "The University of Edinburgh"
   affiliation: "Pasqal"
   nationality: "Norway"
@@ -84,7 +82,6 @@ author:
   stackoverflow    :
   steam            :
   twitter          : "awennersteen"
-  producthunt      : ""
   researchhr       : ""
   bsky             : "https://bsky.app/profile/awennersteen.bsky.social"
 

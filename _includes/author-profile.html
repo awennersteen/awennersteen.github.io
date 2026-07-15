@@ -53,13 +53,13 @@
         <li><a href="{{ author.orcid }}"><i class="ai ai-orcid-square ai-fw" aria-hidden="true"></i> ORCID</a></li>
       {% endif %}
       {% if author.github %}
-      <li><a href="https://github.com/{{ author.github }}"><i class="fab fa-github" aria-hidden="true"></i> Github</a></li>
+      <li><a href="https://github.com/{{ author.github }}"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
       {% endif %}
       {% if author.bsky %}
-         <li><a href="{{ author.bsky }}"><i class="fab fa-fw fa-bluesky icon-pad-right" aria-hidden="true"></i>Bluesky</a></li>
+         <li><a href="{{ author.bsky }}" title="Aleksander Wennersteen on Bluesky"><i class="fab fa-fw fa-bluesky icon-pad-right" aria-hidden="true"></i>Bluesky</a></li>
       {% endif %}
       {% if author.twitter %}
-        <li><a href="https://twitter.com/{{ author.twitter }}"><i class="fab fa-twitter-square" aria-hidden="true"></i> X (Twitter)</a></li>
+        <li><a href="https://x.com/{{ author.twitter }}" title="Aleksander Wennersteen on X"><i class="fab fa-twitter-square" aria-hidden="true"></i> X</a></li>
       {% endif %}
       {% if author.youtube %}
         <li><a href="https://www.youtube.com/{{ author.youtube }}"><i class="fab fa-youtube" aria-hidden="true"></i> YouTube</a></li>
@@ -72,9 +72,6 @@
       {% endif %}
       {% if author.wikipedia %}
         <li><a href="https://en.wikipedia.org/wiki/User:{{ author.wikipedia }}"><i class="fab fa-wikipedia-w" aria-hidden="true"></i> Wikipedia</a></li>
-      {% endif %}
-      {% if author.producthunt %}
-        <li><a href="https://www.producthunt.com/@awennersteen"><i class="fa-brands fa-product-hunt" aria-hidden="true"></i> Product Hunt</a></li>
       {% endif %}
     </ul>
   </div>

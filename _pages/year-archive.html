@@ -35,7 +35,7 @@ featured_posts:
             <div class="archive__item">
               <span class="featured-cards__badge">FEATURED</span>
               <div class="archive__item-body">
-                <h2 class="archive__item-title">{{ featured_post.title }}</h2>
+                <h2 class="archive__item-title"><a href="{{ featured_post.url | prepend: base_path }}">{{ featured_post.title }}</a></h2>
         {% assign featured_excerpt = featured_post.feature_text | default: featured_post.excerpt %}
         {% if featured_excerpt %}
           <div class="archive__item-excerpt">

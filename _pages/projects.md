@@ -21,7 +21,7 @@ redirect_from:
         <div class="archive__item">
           <span class="featured-cards__badge">FEATURED</span>
           <div class="archive__item-body">
-            <h2 class="archive__item-title">Personal AI Agent</h2>
+            <h2 class="archive__item-title"><a href="#personal-projects">Personal AI Agent</a></h2>
             <div class="archive__item-excerpt">
               <p>A private assistant inspired by OpenClaw but built from scratch, connecting Telegram, OpenAI, and Google Calendar so scheduling and messaging happen from one conversational interface.</p>
             </div>
@@ -32,7 +32,7 @@ redirect_from:
         <div class="archive__item">
           <span class="featured-cards__badge">FEATURED</span>
           <div class="archive__item-body">
-            <h2 class="archive__item-title">Qadence</h2>
+            <h2 class="archive__item-title"><a href="https://github.com/pasqal-io/qadence">Qadence</a></h2>
             <div class="archive__item-excerpt">
               <p>A digital-analog quantum SDK I originally led, focused on quantum machine learning, built on PyTorch, and designed to be fully differentiable for fast model-to-execution iteration.</p>
             </div>
@@ -48,7 +48,7 @@ redirect_from:
         <div class="archive__item">
           <span class="featured-cards__badge">FEATURED</span>
           <div class="archive__item-body">
-            <h2 class="archive__item-title">QRMI and Slurm Integration</h2>
+            <h2 class="archive__item-title"><a href="https://github.com/qiskit-community/qrmi">QRMI and Slurm Integration</a></h2>
             <div class="archive__item-excerpt">
               <p>Treating QPUs as first-class schedulable resources in HPC environments through vendor-neutral control-plane interfaces.</p>
             </div>
