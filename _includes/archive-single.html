@@ -51,7 +51,7 @@
     {% if post.collection == 'publications' %}
     <p class="archive__item-excerpt" itemprop="description">Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}.</p>
         {% if post.excerpt != "" %}
-          <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
+          <div class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</div>
         {% endif %}
 
       <p class="archive__item-actions">
@@ -67,7 +67,7 @@
         {% endif %}
       </p>
     {% else %}
-    <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
+    <div class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</div>
       {% if post.tags and post.tags.size > 0 %}
       {% assign tag_archive_type = site.tag_archive.type | default: "liquid" %}
       <p class="page__taxonomy">

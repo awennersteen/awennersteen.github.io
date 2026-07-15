@@ -39,5 +39,5 @@ Qadence is open source and you find it on our [GitHub](https://github.com/pasqal
 <div style="text-align: center">
 <iframe src="https://www.slideshare.net/slideshow/embed_code/key/jLacWXyDLIKm9i" width="476" height="330" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
 <br>
-<a href="https://www.slideshare.net/slideshow/qadence-a-differentiable-interface-for-digital-analog-quantum-programs/274580740" title="Qadence: A differentiable interface for digital-analog quantum programs" target="_blank">Qadence slides</a>
+<a href="https://www.slideshare.net/slideshow/qadence-a-differentiable-interface-for-digital-analog-quantum-programs/274580740" title="Qadence: A differentiable interface for digital-analog quantum programs" rel="noopener noreferrer" target="_blank">Qadence slides</a>
 </div>

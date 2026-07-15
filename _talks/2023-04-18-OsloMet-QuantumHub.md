@@ -13,7 +13,7 @@ description: "An introduction to neutral-atom quantum computing for an academic 
 excerpt: "Neutral-atom quantum computing needs realistic framing. I explain applications, hardware constraints, and commercial timelines to an academic audience. This helps teams plan work against real delivery horizons."
 ---
 
-An introduction to neutral atoms based QC and what we do in industry to the faculties at various institutions in Oslo.
+An introduction to neutral-atom-based quantum computing and what we do in industry to the faculties at various institutions in Oslo.
 
 I was invited to present here after attending another interesting event in Oslo, [QCNorway](https://qcnorway.no), which was an event to seek input for a future Norwegian national quantum strategy, culminating in the organizers writing an article on the topic. Official Norwegian quantum strategy is sadly still to come.
 

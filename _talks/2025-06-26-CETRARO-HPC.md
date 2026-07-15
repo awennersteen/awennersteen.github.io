@@ -21,5 +21,5 @@ Realizing this potential will require deep integration of quantum and classical 
 In this talk, we focus on quantum processing units (QPUs) based on neutral atoms and discuss how they are being integrated into HPC centers. From the physical infrastructure to co-processing workflows and scheduling.
 We present the capabilities of Pasqal’s devices and platform and then outline our near-term hardware developments and explain how these advances shape and support the broader goal of building a hybrid quantum-classical computing platform.
 
-The to read more about the conference please see [announcement](http://www.hpcc.unical.it/hpc2025/announcement.htm) or
-[this years programme](http://www.hpcc.unical.it/hpc2025/program.htm).
+To read more about the conference, see the [announcement](http://www.hpcc.unical.it/hpc2025/announcement.htm) or
+[this year’s programme](http://www.hpcc.unical.it/hpc2025/program.htm).

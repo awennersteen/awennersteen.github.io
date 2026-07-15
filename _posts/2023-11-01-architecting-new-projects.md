@@ -12,8 +12,8 @@ tags:
 
 
 Recently I've helped a few colleagues start greenfield projects for the first time.
-I've noticed repeatedly that this is a difficult task for many, and sometimes academics moving into industry feel a bit overwhelmed about trying to write nice code that is up tho our standards.
-In this post I want to try to shed some light on how this truly is a iterative process. Especially when what you're making is new and we don't really know how to tackle it.
+I've noticed repeatedly that this is a difficult task for many, and sometimes academics moving into industry feel a bit overwhelmed about trying to write nice code that is up to our standards.
+In this post I want to try to shed some light on how this truly is an iterative process. Especially when what you're making is new and we don't really know how to tackle it.
 
 Architecting a new software project is a challenging endeavor that requires a careful balance of technical acumen,
 strategic planning, and effective communication. One of the most critical stages in this process is requirements gathering. 
