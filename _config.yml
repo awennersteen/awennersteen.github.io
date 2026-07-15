@@ -96,6 +96,20 @@ include:
   - _pages
   - files
 exclude:
+  - AGENTS.md
+  - Strategy.md
+  - TODO
+  - TODO~
+  - agent_todo.md
+  - current_task.md
+  - next_task.md
+  - next_next_task.md
+  - talk-metadata-normalization-plan.md
+  - talks-taxonomy-plan.md
+  - excerpt_audit.md
+  - seo_audit_before.md
+  - noindex_inventory.md
+  - 2026-02-12-paul-the-apostle.md
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache

@@ -6,7 +6,9 @@
 {% endif %}
 {% assign seo_url = seo_url | default: site.github.url %}
 
-{% if page.title %}
+{% if page.seo_title %}
+  {% assign seo_title = page.seo_title %}
+{% elsif page.title %}
   {% assign seo_title = page.title | append: " " | append: site.title_separator | append: " " | append: site.title %}
 {% endif %}
 
@@ -42,6 +44,8 @@
   {% endif %}
   {% assign seo_author_twitter = seo_author_twitter | replace: "@", "" %}
 {% endif %}
+
+{% assign seo_modified = page.last_modified_at | default: page.modified %}
 
 <meta property="og:locale" content="{{ site.locale | default: "en" }}">
 <meta property="og:site_name" content="{{ site.title }}">
@@ -124,13 +128,14 @@
         "name": {{ site.title | jsonify }}
       },
       {
-        "@type": "WebPage",
+        "@type": {% if page.profile_page %}["WebPage", "ProfilePage"]{% else %}"WebPage"{% endif %},
         "@id": {{ page.url | prepend: seo_url | replace: "/index.html", "/" | append: "#webpage" | jsonify }},
         "url": {{ page.url | prepend: seo_url | replace: "/index.html", "/" | jsonify }},
         "name": {{ page.title | default: site.title | strip_html | strip_newlines | jsonify }},
         "isPartOf": { "@id": {{ seo_url | append: "/#website" | jsonify }} },
-        "description": {{ seo_description | jsonify }},
-        "mainEntity": { "@id": {{ seo_url | append: "/#person" | jsonify }} }
+        "description": {{ seo_description | jsonify }}{% if seo_modified %},
+        "dateModified": {{ seo_modified | date: "%Y-%m-%d" | jsonify }}{% endif %}{% if page.profile_page %},
+        "mainEntity": { "@id": {{ seo_url | append: "/#person" | jsonify }} }{% endif %}
       },
       {
         "@type": "Person",
@@ -138,6 +143,7 @@
         "name": {{ site.social.name | default: site.name | jsonify }},
         "url": {{ seo_url | jsonify }},
         "image": {{ "/images/awennersteen.jpg" | absolute_url | jsonify }},
+        "jobTitle": "Technical Lead, Quantum-Centric HPC",
         "sameAs": {{ site.social.links | jsonify }},
         "worksFor": {
           "@type": "Organization",

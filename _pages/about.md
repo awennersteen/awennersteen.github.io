@@ -1,11 +1,13 @@
 ---
 permalink: /
-title: "About"
+title: "Aleksander Wennersteen"
+seo_title: "Aleksander Wennersteen | Quantum-Centric HPC"
+profile_page: true
 excerpt: "< Quantum | Software | Machine Learning > engineer/technical lead based in Madrid"
 description: "I am a physicist turned software engineer working at the intersection of quantum computing, artificial intelligence, and high-performance computing. This website hosts my blog on software, quantum technology, and AI/ML. I currently serve as technical lead quantum-centric HPC at Pasqal."
 author_profile: true
 seo_image: images/awennersteen.jpg
-modified: 2026-01-25
+modified: 2026-07-15
 redirect_from: 
   - /about/
   - /about.html
@@ -18,7 +20,7 @@ I am a physicist turned software engineer working at the intersection of quantum
 Throughout my career I have focused on complex systems where product outcomes depend on architecture decisions and execution discipline.
 So far I have worked in quantum computing, artificial intelligence/machine learning, and high-performance computing.
 
-Currently, I work at [Pasqal](https://pasqal.com) as technical lead quantum-centric HPC.
+Currently, I work at [Pasqal](https://pasqal.com) as the technical lead for quantum-centric HPC.
 This is a cross-functional role that includes designing systems, writing software,
 advising on strategy, shaping go-to-market plans, and responding to public procurements and grants.
 
@@ -80,4 +82,4 @@ For example I have tried to applied them to areas like TravelTech and PropTech.
 
 ### Speaker Bio
 
-I am Technical Lead for Quantum-Centric HPC at Pasqal, where I focus on integrating quantum computing with classical HPC systems and building hybrid quantum-classical workflows. Previously at Pasqal, I worked as a quantum software engineer and technical lead on quantum libraries, cloud platform software, and numerical simulation of quantum systems. I hold a master's degree in Mathematical Physics from the University of Edinburgh. Before joining Pasqal, I worked in high-performance computing and artificial intelligence.
+Aleksander is the Technical Lead for Quantum-Centric HPC at Pasqal, where he focuses on integrating quantum computing with classical HPC systems and building hybrid quantum-classical workflows. Previously at Pasqal, he has worked as a quantum software engineer and technical lead on quantum libraries, cloud platform software, and numerical simulation of quantum systems. Aleksander hold a master's degree in Mathematical Physics from the University of Edinburgh. Before joining Pasqal, he worked in high-performance computing and artificial intelligence.
