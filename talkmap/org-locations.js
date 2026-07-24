@@ -58,5 +58,20 @@ var addressPoints = [
     "OCP EMEA Summit, Barcelona, Spain",
     41.4088452,
     2.2167637
+  ],
+  [
+    "IEEE Quantum Week, Toronto, Canada",
+    43.6435,
+    -79.3871
+  ],
+  [
+    "Munich Quantum Software Forum, Munich, Germany",
+    48.1497,
+    11.5679
+  ],
+  [
+    "SC26, Chicago, IL, USA",
+    41.8519,
+    -87.6170
   ]
 ];

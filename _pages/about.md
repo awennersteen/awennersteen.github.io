@@ -63,6 +63,7 @@ For example, I have tried to apply them to areas like TravelTech and PropTech.
 
 |  |  |
 |--------|--------|
+| [Examining QRMI as a Unified Interface](./publications/2026-07-21-examining-qrmi/) | QRMI integration across Slurm, PBS, LSF, Grid Engine, Kubernetes, and Flux. |
 | [User Centric HPC-QC Environment](./publications/2025-11-16-user-centric-qhpc/) | QC-HPC software stack and integration model: Introducing Pasqal's new HPC-QC middleware including a 2nd level quantum scheduler |
 | [Quantum Resources in Resource Management Systems](./publications/2025-06-11-qrmi/) | The Quantum Resource Management Interface (QRMI) and its Slurm integration via SPANK plugins. |
 | [Qadence](./publications/2025-02-03-qadence/) |  A digital and analog quantum DSL and framework that is fully differentiable built on PyTorch's AutoGrad engine |
@@ -74,7 +75,9 @@ For example, I have tried to apply them to areas like TravelTech and PropTech.
 
 |  |  |  |
 |--------|--------|--------|
+| [SC26 (Chicago)](./talks/2026-11-15-SC26-QRMI/) | 11/15-11/20/2026 |  |
 | [Munich Quantum Software Forum (TUM)](./talks/2026-10-14-MQSF/) | 10/14-10/15/2026 |  |
+| [IEEE Quantum Week 2026 (Toronto)](./talks/2026-09-15-IEEE-QCE26/) | 09/15-09/16/2026 |  |
 | [ISC High Performance (Hamburg)](./talks/2026-06-23-ISC26/) | 06/22-06/26/2026 |  |
 | [OCP EMEA Summit (Barcelona)](./talks/2026-04-30-OCP-EMEA/) | 04/30/2026 | [Recording](https://youtu.be/Dmtd9GP0Fcw?is=1OzRWzTgTA91wLzs) |
 | [OpenQSE (Online)](./talks/2026-01-19-OpenQSE/) | 01/19/2026 | [Recording](https://www.youtube.com/watch?v=DoRbE9p2LuM) |
