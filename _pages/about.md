@@ -24,7 +24,6 @@ Currently, I work at [Pasqal](https://pasqal.com) as the technical lead for quan
 This is a cross-functional role that includes designing systems, writing software,
 
 advising on strategy, shaping go-to-market plans, and responding to public procurements and grants.
-I recently co-wrote [“Quantum enhances the HPC stack”](https://www.pasqal.com/blog/quantum-enhances-the-hpc-stack/) for the Pasqal blog, on making QPUs usable within real HPC and data-center environments.
 
 ---
 

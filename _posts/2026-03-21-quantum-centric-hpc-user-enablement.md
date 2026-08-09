@@ -125,4 +125,6 @@ If we get runtime consistency, scheduling semantics, and observability right, be
 For related material, see my [OpenQSE talk](/talks/2026-01-19-OpenQSE/), the [QRMI publication](/publications/2025-06-11-qrmi/), and the [SC25 systems talk](/talks/2025-11-16-SC25/).  
 External context: [OpenQSE meeting notes](https://github.com/openQSE/openqse-admin/wiki/Meeting-2026-01-19) and [slides](https://github.com/openQSE/Workshops/blob/main/OpenQSE-WG/openQSE-Pasqal-20260119.pdf).
 
+For further reading, see my [Pasqal article, “Quantum enhances the HPC stack”](https://www.pasqal.com/blog/quantum-enhances-the-hpc-stack/), which explores the same integration challenge from an industry perspective.
+
 If this maps to a challenge your team is facing, details are on [/hire/](/hire/).
