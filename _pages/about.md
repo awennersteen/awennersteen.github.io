@@ -51,6 +51,7 @@ For example, I have tried to apply them to areas like TravelTech and PropTech.
 
 |  |  |
 |--------|--------|
+| [What actually turns an LLM into an agent?](./posts/2026/08/what-actually-turns-an-llm-into-an-agent/) | A bottom-up look at the small harness that turns an LLM's tool calls into an agent that can act, observe results, and repeat. |
 | [Recreating Gandalf by Lakera](./posts/2024/07/gandalf/) | Rebuilding Lakera's Gandalf prompt-injection game with a plain LLM to make failure modes concrete and highlight input/output controls. |
 | [Microservices are technical debt](./posts/2026/02/microservices-are-technical-debt/) | When microservices help, when they hurt, and how to avoid a distributed monolith by defaulting to a modular monolith. |
 | [Not just GenAI: difficulty of productionising deeptech](./posts/2026/02/not-just-genai-difficulty-of-productionising-deeptech/) | Why production outcomes lag demos, and how evaluation, data boundaries, and cost control determine adoption. |

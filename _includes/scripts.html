@@ -1,3 +1,44 @@
 <script src="{{ base_path }}/assets/js/main.min.js"></script>
+{% if page.collection == "posts" %}
+<script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
 
-{% include analytics.html %}
+  document
+    .querySelectorAll("pre > code.language-mermaid")
+    .forEach((codeBlock) => {
+      const preElement = codeBlock.parentElement;
+      const mermaidElement = document.createElement("pre");
+      mermaidElement.className = "mermaid";
+      mermaidElement.textContent = codeBlock.textContent;
+      preElement.replaceWith(mermaidElement);
+    });
+
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: "neutral", // 'base' is the required foundation to pass custom theme variables
+    themeVariables: {
+      fontFamily: "system-ui, -apple-system, sans-serif", // Inherits clean modern typography
+      primaryColor: "#f3f4f6", // Soft grey background for your nodes
+      primaryTextColor: "#1f2937", // Crisp dark slate text
+      primaryBorderColor: "#d1d5db", // Clean, thin node borders
+      lineColor: "#4b5563", // Slate grey connecting arrows
+      secondaryColor: "#e5e7eb",
+      tertiaryColor: "#f9fafb",
+    },
+    flowchart: {
+      htmlLabels: true, // Enables beautiful anti-aliased HTML text inside nodes
+      curve: "basis", // 'basis' generates smooth, rounded organic paths instead of sharp lines
+    },
+  });
+
+  document
+    .querySelectorAll("pre > code.language-mermaid")
+    .forEach((codeBlock) => {
+      const preElement = codeBlock.parentElement;
+      const newPre = document.createElement("pre");
+      newPre.className = "mermaid";
+      newPre.textContent = codeBlock.textContent;
+      preElement.replaceWith(newPre);
+    });
+</script>
+{% endif %} {% include analytics.html %}
