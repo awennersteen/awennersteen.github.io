@@ -14,7 +14,7 @@
     });
 
   mermaid.initialize({
-    startOnLoad: true,
+    startOnLoad: false,
     theme: "neutral", // 'base' is the required foundation to pass custom theme variables
     themeVariables: {
       fontFamily: "system-ui, -apple-system, sans-serif", // Inherits clean modern typography
@@ -31,14 +31,8 @@
     },
   });
 
-  document
-    .querySelectorAll("pre > code.language-mermaid")
-    .forEach((codeBlock) => {
-      const preElement = codeBlock.parentElement;
-      const newPre = document.createElement("pre");
-      newPre.className = "mermaid";
-      newPre.textContent = codeBlock.textContent;
-      preElement.replaceWith(newPre);
-    });
+  mermaid.run();
 </script>
-{% endif %} {% include analytics.html %}
+{% endif %}
+
+{% include analytics.html %}
