@@ -28,7 +28,7 @@ Crucially, Kimi-Linear has a native tool-call template.
 `llama.cpp` knows how to parse those tokens into a structured API response, and our harness decides whether anything actually runs, and how.
 For more details and the full code see the accompanying GitHub repository [awennersteen/AI-agent-experiments](https://github.com/awennersteen/AI-agent-experiments).
 
-[Take me directly to the code block](#agent-loop)
+**[Take me directly to the implementation](#implementation)**
 
 ## An LLM cannot take actions
 
@@ -111,7 +111,7 @@ Such result is added to the history and becomes part of the next model invocatio
 
 This is already the beginning of what is called [context engineering](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents): deciding what information the model should have available at each step.
 
-## Let's create our tiny agent
+## Let's create our tiny agent<a id="implementation"></a>
 
 We'll need to setup an LLM and communicate with it, give it tools and create the agent loop.
 The first part, setting up an LLM for local inference and sending it requests, is very standard and not instructive so you'll need to toggle them to appear below.
@@ -213,7 +213,6 @@ TOOLS = [
 ```
 
 ### The agent loop
-<a id="agent-loop"></a>
 
 ```python
 def agent(task, max_turns=20):
