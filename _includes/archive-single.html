@@ -82,8 +82,15 @@
         {% endfor %}
       </p>
       {% endif %}
-      {% if site.read_more == 'enabled' %}
-      <a class="btn btn--primary btn--small" href="{{ base_path }}{{ post.url }}" rel="permalink">Read the post</a>
+      {% if site.read_more == 'enabled' or post.github_repo %}
+      <p class="archive__item-actions">
+        {% if site.read_more == 'enabled' %}
+          <a class="btn btn--primary btn--small" href="{{ base_path }}{{ post.url }}" rel="permalink">Read the post</a>
+        {% endif %}
+        {% if post.github_repo %}
+          <a class="btn btn--small" href="{{ post.github_repo }}">GitHub repo</a>
+        {% endif %}
+      </p>
       {% endif %}
     {% endif %}
   

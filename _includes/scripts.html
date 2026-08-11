@@ -1,3 +1,17 @@
+<script>
+  document
+    .querySelectorAll(".page__content img, .page__hero-image")
+    .forEach(function(image) {
+      if (image.closest("a")) return;
+
+      var link = document.createElement("a");
+      link.href = image.src;
+      link.className = "image-popup";
+      link.setAttribute("aria-label", "Open image at full size");
+      image.parentNode.insertBefore(link, image);
+      link.appendChild(image);
+    });
+</script>
 <script src="{{ base_path }}/assets/js/main.min.js"></script>
 {% if page.collection == "posts" %}
 <script type="module">

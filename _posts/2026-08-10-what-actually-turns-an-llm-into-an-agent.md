@@ -4,12 +4,16 @@ date: 2026-08-10
 permalink: /posts/2026/08/what-actually-turns-an-llm-into-an-agent/
 description: "A bottom-up look at the small harness that turns an LLM's tool calls into an agent that can act, observe results, and repeat."
 excerpt: "LLMs cannot interact with the world. How can we from first principles write an AI agent? In this blog we write a small harness that can decode the LLM proposed action, executes it, and feed the result into the next context."
+seo_image: images/agent-harness-summary.png
+github_repo: https://github.com/awennersteen/AI-agent-experiments
 categories:
   - "AI & ML Systems"
 tags:
   - LLM
   - architecture
 ---
+
+![Summary of the agent harness](/images/agent-harness-summary.png)
 
 I recently realised I didn't really know how AI agents worked under the hood.
 There are now plenty of agent frameworks, SDKs, protocols and other infrastructure.
@@ -20,15 +24,17 @@ So I wanted to step back and answer a simple question:
 **What is the minimum software required to turn an LLM into an agent?**
 
 It turns out that the core loop is only a few dozen lines of Python.
-This loop is normally referred to as a "harness".
+This loop is the core of what is normally referred to as a "harness".
 Microsoft has a definition I like: an [agent harness](https://learn.microsoft.com/en-us/agent-framework/agents/harness) is "the scaffolding that turns a language model into an agent that can actually do things."
 
-For this experiment I use [Kimi-Linear-48B-A3B-Instruct](https://huggingface.co/moonshotai/Kimi-Linear-48B-A3B-Instruct), served locally through `llama.cpp`.
-Crucially, Kimi-Linear has a native tool-call template.
-`llama.cpp` knows how to parse those tokens into a structured API response, and our harness decides whether anything actually runs, and how.
-For more details and the full code see the accompanying GitHub repository [awennersteen/AI-agent-experiments](https://github.com/awennersteen/AI-agent-experiments).
+{: .page-cta}
 
-**[Take me directly to the implementation](#implementation)**
+**[Take me directly to the implementation section](#implementation)**
+
+For this experiment I use [Kimi-Linear-48B-A3B-Instruct](https://huggingface.co/moonshotai/Kimi-Linear-48B-A3B-Instruct), served locally through `llama.cpp`.
+Crucially, Kimi-Linear ships with a [tool-aware chat template](https://huggingface.co/moonshotai/Kimi-Linear-48B-A3B-Instruct/blob/main/chat_template.jinja) that serializes tool schemas and tool calls into Kimi's model-specific representation.
+`llama.cpp` parses that representation into a structured API response, and our harness decides whether anything actually runs, and how.
+For more details and the full code see the accompanying GitHub repository [awennersteen/AI-agent-experiments](https://github.com/awennersteen/AI-agent-experiments).
 
 ## An LLM cannot take actions
 
@@ -54,8 +60,8 @@ Given an appropriate task, Kimi might generate its native representation of some
 }
 ```
 
-Models with native tool calling, including Kimi K2, generate model-specific tool-call tokens that an inference server can parse into a structured `tool_calls` object.
-The details are described in the [Kimi K2 tool-calling guidance](https://huggingface.co/moonshotai/Kimi-K2-Instruct-0905/blob/main/docs/tool_call_guidance.md) and the [vLLM tool-calling documentation](https://docs.vllm.ai/en/stable/features/tool_calling/).
+Models with native tool calling generate model-specific tool-call representations that an inference server can parse into a structured `tool_calls` object.
+Kimi-Linear uses the same Kimi-family tool-call format as Kimi K2; Moonshot's [Kimi K2 tool-calling guidance](https://huggingface.co/moonshotai/Kimi-K2-Instruct/blob/main/docs/tool_call_guidance.md) describes the protocol in more detail, while the [`llama.cpp` function-calling documentation](https://github.com/ggml-org/llama.cpp/blob/master/docs/function-calling.md) describes the inference-server side.
 In short, Kimi-Linear emits its model-specific representation, `llama.cpp` parses it into a structured tool call, and our harness decodes the arguments and executes it.
 
 ```mermaid
@@ -83,7 +89,7 @@ But that is beyond the scope of this experiment.
 
 The harness constructs the model's working context for each invocation.
 That can contain the system instructions, user request, descriptions of available tools, previous model responses, previous tool calls and the results returned by those tools.
-Maybe we can think of the harness in this sense as sensory system of the model, instructing it's brain (the LLM) what is in the world and what it can do.
+Maybe we can think of the harness in this sense as the sensory system of the model, instructing its brain (the LLM) what is in the world and what it can do.
 
 ```mermaid
 flowchart LR
@@ -107,13 +113,13 @@ The harness constructs the world that the model sees:
 - A shell command might return an error.
 - A test might fail.
 - Reading a file might reveal something unexpected.
-Such result is added to the history and becomes part of the next model invocation, allowing the agent to try again or to fix it.
+Such a result is added to the history and becomes part of the next model invocation, allowing the agent to try again or to fix it.
 
 This is already the beginning of what is called [context engineering](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents): deciding what information the model should have available at each step.
 
 ## Let's create our tiny agent<a id="implementation"></a>
 
-We'll need to setup an LLM and communicate with it, give it tools and create the agent loop.
+We'll need to set up an LLM and communicate with it, give it tools and create the agent loop.
 The first part, setting up an LLM for local inference and sending it requests, is very standard and not instructive so you'll need to toggle them to appear below.
 
 The accompanying GitHub repository [awennersteen/AI-agent-experiments](https://github.com/awennersteen/AI-agent-experiments) contains the full setup for how to install `llama-server`, which will automatically pull the model,
@@ -122,7 +128,7 @@ all the source code and a copy of this blog post.
 <details markdown="1">
 <summary>Setup</summary>
 
-In short, install `llama.cpp` with the one liner
+In short, install `llama.cpp` with the one-liner
 ```bash
 curl -LsSf https://llama.app/install.sh | sh
 ```
@@ -254,7 +260,7 @@ def agent(task, max_turns=20):
     raise RuntimeError("Maximum turns exceeded")
 ```
 
-The core part is in the `try ... except` block. having received a `tool_call` message from the LLM, we look up its `name`.
+The core part is in the `try ... except` block. Having received a `tool_call` message from the LLM, we look up its `name`.
 In order to execute the tool, we look up the callable function in the `IMPLEMENTATIONS` mapping, and pass the `**arguments` provided by the LLM. If that function call errors, it will raise a Python `Exception`, that we catch, and add as the `result`.
 Otherwise, we use the `result` of the original function call.
 
@@ -316,26 +322,26 @@ sequenceDiagram
     S-->>H: stdout + stderr
 ```
 
-If you want to see this yourself, I'd suggest to start by `print` the variable `message` in the method `agent`.
+If you want to see this yourself, I'd suggest starting by printing the `message` variable in the method `agent`.
 
 ## What is actually doing what?
 
 That is already an agent that can interact with the world and decide based on those external impulses.
 And, there are only a few essential pieces to understand. Most importantly:
 
-- **The model chooses the next action**  
+- **The model proposes the next action.**  
   Whether that is a regular text response or a request to use a tool.
 
-- **The tool schemas describe the actions available to it**  
-  They are just JSONs with descriptions and parameters.
+- **The tool schemas describe the actions available to it.**  
+  They are just JSON objects with descriptions and parameters.
 
-- **The harness executes requested actions**  
+- **The harness executes requested actions.**  
   This is where the LLM affects the outside world.
 
-- **The harness constructs the working context**  
+- **The harness constructs the working context.**  
   The model's knowledge of the ongoing task comes from what the harness sends on each invocation.
 
-- **The loop provides autonomy**  
+- **The loop provides autonomy.**  
   We do not decide manually which action follows each model response.
 
 There is also an important authority boundary.
@@ -355,7 +361,7 @@ Anthropic's [context engineering article](https://www.anthropic.com/engineering/
 Notice that this is very different from how Retrieval Augmented Generation (RAG) was first done in the past, yet a similar idea.
 
 Real coding agents also tend to expose more convenient operations.
-For example, dedicated patching, editing and search tools can be much better interfaces, and less error prone, than repeatedly rewriting whole files.
+For example, dedicated patching, editing and search tools can be much better interfaces, and less error-prone, than repeatedly rewriting whole files.
 But those tools do not change the underlying mechanism.
 
 ## Further reading
@@ -370,10 +376,10 @@ But those tools do not change the underlying mechanism.
   Goes deeper into something the tiny harness mostly ignores: the model's context is finite, and deciding what information should occupy it becomes a problem of its own.
 
 - **[The Codex App Server underlying Codex, OpenAI](https://openai.com/index/unlocking-the-codex-harness/)**  
-  Zooming out, in order to re-use the harness in multiple products and allowing 3rd party extensions, OpenAI separated the Codex App Server containing the main harness from famous Codex CLI, IDE extensions, web app and macOS app.
+  Zooming out, in order to re-use the harness in multiple products and allowing third-party extensions, OpenAI separated the Codex App Server containing the main harness from famous Codex CLI, IDE extensions, web app and macOS app.
 
 - **[Tool Calling, vLLM](https://docs.vllm.ai/en/stable/features/tool_calling/)**  
-  Useful implementation-level documentation for the inference server's parsing role. It explains how model-specific tool calls are exposed through an OpenAI-compatible API.
+  A useful comparison with `llama.cpp`: another inference server exposing model-specific tool-call formats through an OpenAI-compatible API. Its documentation makes the parsing layer of the inference server explicit.
 
 - **[Kimi K2 tool-calling guidance, Moonshot AI](https://huggingface.co/moonshotai/Kimi-K2-Instruct-0905/blob/main/docs/tool_call_guidance.md)**  
   Useful for looking one level below the API abstraction and seeing how Kimi represents tool calls and how an inference server is expected to parse them.

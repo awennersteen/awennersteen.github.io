@@ -26,10 +26,14 @@ div.highlighter-rouge, figure.highlight {
   }
 
   .highlight {
-    margin: 0;
-    font-family: $monospace;
-    font-size: $type-size-7;
-    line-height: 1.8;
+      margin: 0;
+      font-family: $monospace;
+      font-size: $type-size-7;
+      line-height: 1.8;
+
+      @include breakpoint($medium) {
+	  font-size: 0.8em;
+      }
   }
 }
 

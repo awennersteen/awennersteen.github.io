@@ -44,6 +44,9 @@ featured_posts:
         {% endif %}
                 <p class="archive__item-actions">
                   <a href="{{ featured_post.url | prepend: base_path }}" class="btn btn--primary">Read</a>
+                  {% if featured_post.github_repo %}
+                    <a href="{{ featured_post.github_repo }}" class="btn">GitHub repo</a>
+                  {% endif %}
                 </p>
               </div>
             </div>

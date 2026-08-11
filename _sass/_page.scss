@@ -165,6 +165,10 @@
   -ms-interpolation-mode: bicubic;
 }
 
+.image-popup img {
+  cursor: zoom-in;
+}
+
 .page__hero-caption {
   position: absolute;
   bottom: 0;
