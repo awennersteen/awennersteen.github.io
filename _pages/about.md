@@ -75,7 +75,7 @@ For example, I have tried to apply them to areas like TravelTech and PropTech.
 
 |  |  |  |
 |--------|--------|--------|
-| [SC26 (Chicago)](./talks/2026-11-15-SC26-QRMI/) | 11/15-11/20/2026 |  |
+| [SC26 (Chicago)](./talks/2026-11-15-SC26/) | 11/15-11/20/2026 |  |
 | [Munich Quantum Software Forum (TUM)](./talks/2026-10-14-MQSF/) | 10/14-10/15/2026 |  |
 | [IEEE Quantum Week 2026 (Toronto)](./talks/2026-09-15-IEEE-QCE26/) | 09/15-09/16/2026 |  |
 | [ISC High Performance (Hamburg)](./talks/2026-06-23-ISC26/) | 06/22-06/26/2026 |  |
