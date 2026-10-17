@@ -5,6 +5,7 @@ permalink: /posts/2026/08/what-actually-turns-an-llm-into-an-agent/
 description: "A bottom-up look at the small harness that turns an LLM's tool calls into an agent that can act, observe results, and repeat."
 excerpt: "LLMs cannot interact with the world. How can we from first principles write an AI agent? In this blog we write a small harness that can decode the LLM proposed action, executes it, and feed the result into the next context."
 seo_image: images/agent-harness-social.png
+search_image: /images/agent-harness-summary.png
 seo_image_width: 1732
 seo_image_height: 908
 seo_image_alt: "The agent harness loop: context goes to the LLM, tools run, and results feed back into context."

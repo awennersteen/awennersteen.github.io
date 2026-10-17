@@ -6,6 +6,7 @@ description: "Learn how prompt reinjection exposes LLM safety vulnerabilities to
 excerpt: "Prompt injection becomes obvious in Lakera's Gandalf game. System prompts alone fail once user text is treated as trusted context. Test reinjection paths to design safer LLM interactions."
 feature_text: "Rebuilding Lakera's Gandalf prompt-injection game with a plain LLM to make failure modes concrete and highlight input/output controls."
 seo_image: images/gandalf-social.png
+search_image: /images/level_1.png
 seo_image_width: 1733
 seo_image_height: 907
 seo_image_alt: "Recreating Gandalf by Lakera: prompt injection, one level at a time."

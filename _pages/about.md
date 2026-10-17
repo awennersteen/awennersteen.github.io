@@ -3,6 +3,7 @@ permalink: /
 title: "Aleksander Wennersteen"
 seo_title: "Aleksander Wennersteen | Quantum-Centric HPC"
 profile_page: true
+search_image: /images/awennersteen.jpg
 excerpt: "< Quantum | Software | Machine Learning > engineer/technical lead based in Madrid"
 description: "Physicist turned software engineer working across quantum computing, AI, and HPC. Technical lead for quantum-centric HPC at Pasqal, based in Madrid."
 author_profile: true
