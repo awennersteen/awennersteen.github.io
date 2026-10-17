@@ -6,9 +6,11 @@ excerpt: 'The Quantum Resource Management Interface (QRMI) provides a vendor-agn
 date: 2026-07-21
 venue: "ArXiv"
 paperurl: 'https://arxiv.org/abs/2607.19591'
+description: "QRMI as a shared interface for scheduling, executing, and monitoring quantum workloads across HPC environments and workload managers."
 ---
-
 This [paper](https://arxiv.org/abs/2607.19591) is available for free on the arXiv.
+
+Yoonho Park from IBM will present it at the [SFWM workshop at SC26](https://sfwqhe.github.io/sfwm-sc26/) on November 15, 2026, at 10:30–10:45 CST in room W178a.
 
 The paper examines QRMI as a unified interface for integrating heterogeneous quantum resources into HPC environments. It extends the earlier Slurm integration to PBS, LSF, Grid Engine, Kubernetes, and Flux, comparing scheduler-specific integration patterns and alternative approaches to quantum resource management.
 

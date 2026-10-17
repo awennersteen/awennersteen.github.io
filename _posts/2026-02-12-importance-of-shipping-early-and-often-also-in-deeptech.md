@@ -10,8 +10,8 @@ tags:
   - software
   - deeptech
   - product
+social_title: "Shipping early and often in deeptech software"
 ---
-
 Deep tech software teams often fall into a trap: because the underlying technology has long cycles and high uncertainty, the software “waits” for clarity. The result is predictable: big-bang releases, long feedback loops, and systems that are hard to change when reality finally arrives.
 
 I’ve learned (sometimes the hard way) that shipping early, often, and incrementally is even more important when the environment is uncertain.

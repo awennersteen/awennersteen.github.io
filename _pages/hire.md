@@ -3,8 +3,7 @@ permalink: /hire/
 title: "Technology consulting and advisory services"
 excerpt: "Expert technology consulting and advisory services focused on AI, quantum computing, and high-performance computing systems."
 author_profile: true
-description: "Senior-level technology consulting and advisory services by Aleksander Wennersteen, focusing on AI, quantum computing, and high-performance computing. Short-term, high-impact engagements for startups, scale-ups, and technical leadership teams."
-seo_image: images/awennersteen.jpg
+description: "Short-term consulting and advisory work with Aleksander Wennersteen on AI, quantum computing, HPC, software architecture, and technical strategy."
 modified: 2026-01-23
 redirect_from: 
   - /hire.html
@@ -13,7 +12,6 @@ redirect_from:
   - /consult.html/
   - /consulting.html/
 ---
-
 For the time being I'm not actively looking to leave Pasqal for full-time roles.
 I provide expert-level technology consulting and advisory services for organizations working at the frontier of advanced computing.
 My focus is on short-term, high-impact engagements where deep technical judgment and system-level thinking materially influence outcomes.

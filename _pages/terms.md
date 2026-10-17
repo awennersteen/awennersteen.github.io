@@ -2,8 +2,8 @@
 permalink: /terms/
 title: "Terms and Privacy Policy"
 modified: 2016-06-06
+description: "Terms and privacy policy for Aleksander Wennersteen’s website, including information about log files, cookies, and third-party services."
 ---
-
 {% include base_path %}
 {% include toc %}
 

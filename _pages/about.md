@@ -4,15 +4,13 @@ title: "Aleksander Wennersteen"
 seo_title: "Aleksander Wennersteen | Quantum-Centric HPC"
 profile_page: true
 excerpt: "< Quantum | Software | Machine Learning > engineer/technical lead based in Madrid"
-description: "I am a physicist turned software engineer working at the intersection of quantum computing, artificial intelligence, and high-performance computing. This website hosts my blog on software, quantum technology, and AI/ML. I currently serve as technical lead quantum-centric HPC at Pasqal."
+description: "Physicist turned software engineer working across quantum computing, AI, and HPC. Technical lead for quantum-centric HPC at Pasqal, based in Madrid."
 author_profile: true
-seo_image: images/awennersteen.jpg
-modified: 2026-07-15
+modified: 2026-10-17
 redirect_from: 
   - /about/
   - /about.html
 ---
-
 I help engineering and research leaders design and ship hybrid systems across AI, quantum computing, and HPC.
 My work spans middleware, runtime integration, and systems-level strategy for quantum-centric HPC deployments.
 
@@ -22,7 +20,6 @@ So far I have worked in quantum computing, artificial intelligence/machine learn
 
 Currently, I work at [Pasqal](https://pasqal.com) as the technical lead for quantum-centric HPC.
 This is a cross-functional role that includes designing systems, writing software,
-
 advising on strategy, shaping go-to-market plans, and responding to public procurements and grants.
 
 ---
@@ -75,14 +72,13 @@ For example, I have tried to apply them to areas like TravelTech and PropTech.
 
 |  |  |  |
 |--------|--------|--------|
-| [SC26 (Chicago)](./talks/2026-11-15-SC26/) | 11/15-11/20/2026 |  |
-| [Munich Quantum Software Forum (TUM)](./talks/2026-10-14-MQSF/) | 10/14-10/15/2026 |  |
+| [SC26: QRMI Tutorial and SFWM Panel (Chicago)](/talks/2026-11-15-SC26/) | 11/15-11/16/2026 | [Tutorial](https://qrmi-community.github.io/tutorials/sc26/) · [Workshop](https://sfwqhe.github.io/sfwm-sc26/) |
+| [Munich Quantum Software Forum (Munich)](/talks/2026-10-14-MQSF/) | 10/15/2026 | [Program](https://munich-quantum-software.github.io/mqsf/2026/program/#aleksander-details) |
 | [IEEE Quantum Week 2026 (Toronto)](./talks/2026-09-15-IEEE-QCE26/) | 09/15-09/16/2026 |  |
 | [ISC High Performance (Hamburg)](./talks/2026-06-23-ISC26/) | 06/22-06/26/2026 |  |
 | [OCP EMEA Summit (Barcelona)](./talks/2026-04-30-OCP-EMEA/) | 04/30/2026 | [Recording](https://youtu.be/Dmtd9GP0Fcw?is=1OzRWzTgTA91wLzs) |
 | [OpenQSE (Online)](./talks/2026-01-19-OpenQSE/) | 01/19/2026 | [Recording](https://www.youtube.com/watch?v=DoRbE9p2LuM) |
 | [OCP FTI (Online)](./talks/2026-01-16-OCP/) |  01/16/2026 | [Recording](https://www.youtube.com/watch?v=v0u9uy1K8Aw) |
-
 
 
 ### Speaker Bio

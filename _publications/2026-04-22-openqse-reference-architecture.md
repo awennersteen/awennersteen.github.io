@@ -6,8 +6,9 @@ excerpt: 'Quantum resources are increasingly integrated into high-performance co
 date: 2026-04-22
 venue: 'ArXiv'
 paperurl: 'https://arxiv.org/abs/2604.20912'
+description: "A survey of nine quantum-HPC software stacks and the openQSE reference architecture, covering runtimes, scheduling, interoperability, and observability."
+social_title: "Quantum-HPC stacks and the openQSE reference architecture"
 ---
-
 This [paper](https://arxiv.org/abs/2604.20912) is available for free on the arXiv.
 
 The work surveys production quantum-HPC software stacks and introduces the open quantum-HPC software ecosystem (openQSE) reference architecture as a way to describe layer boundaries for interoperable quantum-HPC systems.

@@ -8,8 +8,8 @@ venue: "SC'25 workshops proceedings"
 recording: "https://www.youtube.com/watch?v=DoRbE9p2LuM"
 slides: "https://github.com/openQSE/Workshops/blob/main/OpenQSE-WG/openQSE-Pasqal-20260119.pdf"
 paperurl: 'https://dl.acm.org/doi/10.1145/3731599.3767549'
+description: "A portable HPC-QC runtime built on QRMI, with second-level scheduling, support for multiple SDKs, and monitoring for hybrid quantum-classical workflows."
 ---
-
 The [paper](https://dl.acm.org/doi/10.1145/3731599.3767549) is available for free from ACM.
 
 It was given as a [presentation](/talks/2025-11-16-SC25/) at SC25 in St. Louis, and later at the [OpenQSE meeting](/talks/2026-01-19-OpenQSE/) of which there is also a recording.

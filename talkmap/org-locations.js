@@ -70,6 +70,11 @@ var addressPoints = [
     11.5679
   ],
   [
+    "Qiskit Fall Fest 2026, IIT Jodhpur, India (online talk)",
+    26.4710115,
+    73.1134222
+  ],
+  [
     "SC26, Chicago, IL, USA",
     41.8519,
     -87.6170

@@ -6,7 +6,6 @@ layout: archive
 classes: page--features
 author_profile: true
 description: "Selected system-level integrations across quantum and HPC, plus independent software systems, with GitHub repositories and public coverage links."
-seo_image: images/awennersteen.jpg
 modified: 2026-03-21
 redirect_from:
   - /projects.html

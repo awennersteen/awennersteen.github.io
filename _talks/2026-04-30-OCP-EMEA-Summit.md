@@ -13,8 +13,8 @@ categories:
   - "Quantum-HPC Integration"
 description: "OCP EMEA Summit 2026 talk introducing QRMI as open, vendor-neutral middleware for integrating quantum processors into heterogeneous compute infrastructure."
 excerpt: "Quantum processors need to become first-class resources inside compute infrastructure. I introduce QRMI as open, vendor-neutral middleware for orchestration, observability, and maintenance."
+social_title: "QRMI: Middleware for quantum resources in HPC"
 ---
-
 I gave a talk on QRMI and general control-plane quantum middleware at the [Open Compute Project EMEA Summit](https://www.opencompute.org/summit/emea-summit)
 in the FTS Quantum track.
 

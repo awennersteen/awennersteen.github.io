@@ -8,8 +8,8 @@ excerpt: 'In the last decade, advances in quantum technologies have allowed for 
 date: 2026-02-05
 venue: 'QUEST-IS 2025 in Springer Communications in Computer and Information Science'
 paperurl: 'https://link.springer.com/chapter/10.1007/978-3-032-13855-2_11'
+description: "Running hybrid quantum-classical workloads on Pasqal’s cloud platform, with applications in quantum optimization, machine learning, and simulation."
 ---
-
 One can download [the paper](https://link.springer.com/chapter/10.1007/978-3-032-13855-2_11) from the publisher.
 There isn't a pre-print available, but material has been re-used and updated from the [EMU-TN on the cloud paper](/publications/2023-02-10-emutn/).
 

@@ -6,8 +6,9 @@ excerpt: 'Quantum deployments are moving from lab environments and small private
 date: 2026-04-14
 venue: 'Open Compute Project white paper'
 paperurl: 'https://www.opencompute.org/documents/integrating-qpus-into-dc-infrastructure-pdf'
+description: "An Open Compute Project white paper on QPU integration in data centers, covering facility constraints, control interfaces, and operational workflows."
+social_title: "Integrating QPUs into data center infrastructure"
 ---
-
 This [white paper](https://www.opencompute.org/documents/integrating-qpus-into-dc-infrastructure-pdf) is available from the Open Compute Project.
 
 It sits within OCP's Future Technologies Initiative workstream on Data Center Integration of Quantum Information Infrastructure, which focuses on open integration standards for quantum technologies in general-purpose data centers, including hardware deployment guidance and middleware directions for hybrid workflow orchestration.
