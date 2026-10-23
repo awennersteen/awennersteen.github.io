@@ -4,6 +4,7 @@ collection: publications
 permalink: /publications/2026-07-21-examining-qrmi/
 excerpt: 'The Quantum Resource Management Interface (QRMI) provides a vendor-agnostic middleware layer for scheduling, executing, and monitoring quantum workloads across heterogeneous HPC environments and workload managers.'
 date: 2026-07-21
+modified: 2026-10-23
 venue: "ArXiv"
 paperurl: 'https://arxiv.org/abs/2607.19591'
 description: "QRMI as a shared interface for scheduling, executing, and monitoring quantum workloads across HPC environments and workload managers."
@@ -16,5 +17,10 @@ The paper examines QRMI as a unified interface for integrating heterogeneous qua
 
 I contributed to the work as a Pasqal co-author and QRMI maintainer, alongside collaborators from the QRMI community.
 
-The paper abstract is:
+## Coverage
+
+[Quantum Computing Report covered our collaborative paper](https://quantumcomputingreport.com/multi-institutional-consortium-expands-qrmi-to-standardize-quantum-hpc-integration-across-major-workload-managers/) on October 10, 2026, discussing QRMI’s integration with HPC workload managers and the participating institutions.
+
+## Abstract
+
 > The efficient and scalable integration of quantum resources into high-performance computing (HPC) environments requires standardized mechanisms for resource management, scheduling, and workflow orchestration across diverse and heterogeneous infrastructures. The Quantum Resource Management Interface (QRMI) addresses this challenge through a thin, vendor-agnostic middleware layer that provides standardized APIs for scheduling, executing, and monitoring quantum workloads while exposing quantum resources as first-class schedulable resources alongside CPUs and GPUs. This paper extends the validation of QRMI to a broad range of workload managers, including PBS, LSF, Grid Engine, Kubernetes, and the Flux Framework, encompassing traditional batch schedulers, a cloud-native orchestration platform, and a graph-based scheduler. We examine the integration patterns, implementation requirements, and scheduler-specific considerations associated with each environment and compare QRMI with alternative approaches to quantum resource integration. We demonstrate that QRMI provides a portable and flexible abstraction layer that minimizes scheduler-specific modifications while enabling consistent access to heterogeneous quantum resources across both on-premises and cloud environments.

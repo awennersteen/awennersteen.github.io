@@ -6,7 +6,7 @@ layout: archive
 classes: page--features
 author_profile: true
 description: "Selected system-level integrations across quantum and HPC, plus independent software systems, with GitHub repositories and public coverage links."
-modified: 2026-03-21
+modified: 2026-10-23
 redirect_from:
   - /projects.html
 ---
@@ -111,6 +111,7 @@ redirect_from:
   <article class="archive__item">
     <h2 class="archive__item-title">QRMI (Quantum Resource Management Interface)</h2>
     <p class="archive__item-excerpt">QPUs were often treated as special-case devices in HPC operations. I helped build QRMI and the Slurm/SPANK integration path so quantum hardware can be scheduled like other shared resources. This opened a practical route for CPU-GPU-QPU workflows in real environments.</p>
+    <p>For context on the IBM collaboration behind this work, see <a href="https://sifted.eu/articles/pasqal-ibm-partnership-quantum-news">Sifted’s report on the IBM–Pasqal quantum-centric supercomputing partnership</a> (June 6, 2024).</p>
     <p class="archive__item-actions">
       <a href="https://github.com/qiskit-community/qrmi" class="btn btn--small">QRMI GitHub</a>
       <a href="https://github.com/qiskit-community/spank-plugins" class="btn btn--small">SPANK GitHub</a>
@@ -125,6 +126,7 @@ redirect_from:
   <article class="archive__item">
     <h2 class="archive__item-title">CUDA-Q x Pasqal Integration (with NVIDIA)</h2>
     <p class="archive__item-excerpt">To make high-level quantum code runnable in real infrastructure, I worked on Pasqal integration pathways connected to CUDA-Q. The result is a cleaner handoff from developer code to schedulable execution on heterogeneous systems.</p>
+    <p><a href="https://www.investing.com/news/stock-market-news/french-quantum-computer-firm-pasqal-links-up-with-nvidia-3941204">Reuters covered the Pasqal–NVIDIA CUDA-Q integration</a> on March 21, 2025 (via Investing.com).</p>
     <p class="archive__item-actions">
       <a href="https://nvidia.github.io/cuda-quantum/latest/using/backends/hardware/neutralatom.html#pasqal" class="btn btn--small">CUDA-Q Docs</a>
       <a href="https://www.pasqal.com/newsroom/pasqal-to-advance-hybrid-quantum-computing-with-nvidia-cuda-q-platform/" class="btn btn--small">Pasqal PR (Mar 20, 2025)</a>

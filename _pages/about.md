@@ -7,7 +7,7 @@ search_image: /images/awennersteen.jpg
 excerpt: "< Quantum | Software | Machine Learning > engineer/technical lead based in Madrid"
 description: "Physicist turned software engineer working across quantum computing, AI, and HPC. Technical lead for quantum-centric HPC at Pasqal, based in Madrid."
 author_profile: true
-modified: 2026-10-17
+modified: 2026-10-23
 redirect_from: 
   - /about/
   - /about.html
@@ -43,12 +43,13 @@ The rest of my time I dedicate to exploring LLMs/ChatBots (especially with Retri
 For example, I have tried to apply them to areas like TravelTech and PropTech.
 
 
-## Selected Blog Posts
+## Selected Writing
 
 {: .page-features-table .cols-2}
 
 |  |  |
 |--------|--------|
+| [Quantum enhances the HPC stack](https://www.pasqal.com/blog/quantum-enhances-the-hpc-stack/) | Making QPUs usable within HPC environments, from resource management to hybrid workflows. Pasqal blog · co-authored with Lucia Garbini. |
 | [What actually turns an LLM into an agent?](./posts/2026/08/what-actually-turns-an-llm-into-an-agent/) | A bottom-up look at the small harness that turns an LLM's tool calls into an agent that can act, observe results, and repeat. |
 | [Recreating Gandalf by Lakera](./posts/2024/07/gandalf/) | Rebuilding Lakera's Gandalf prompt-injection game with a plain LLM to make failure modes concrete and highlight input/output controls. |
 | [Microservices are technical debt](./posts/2026/02/microservices-are-technical-debt/) | When microservices help, when they hurt, and how to avoid a distributed monolith by defaulting to a modular monolith. |
@@ -73,10 +74,9 @@ For example, I have tried to apply them to areas like TravelTech and PropTech.
 
 |  |  |  |
 |--------|--------|--------|
-| [SC26: QRMI Tutorial and SFWM Panel (Chicago)](/talks/2026-11-15-SC26/) | 11/15-11/16/2026 | [Tutorial](https://qrmi-community.github.io/tutorials/sc26/) · [Workshop](https://sfwqhe.github.io/sfwm-sc26/) |
+| [SC26: QRMI Tutorial, SFWM Panel, and Exhibitor Talk (Chicago)](/talks/2026-11-15-SC26/) | 11/15-11/17/2026 |  |
 | [Munich Quantum Software Forum (Munich)](/talks/2026-10-14-MQSF/) | 10/15/2026 | [Program](https://munich-quantum-software.github.io/mqsf/2026/program/#aleksander-details) |
-| [IEEE Quantum Week 2026 (Toronto)](./talks/2026-09-15-IEEE-QCE26/) | 09/15-09/16/2026 |  |
-| [ISC High Performance (Hamburg)](./talks/2026-06-23-ISC26/) | 06/22-06/26/2026 |  |
+| [IEEE Quantum Week 2026 (Toronto)](./talks/2026-09-15-IEEE-QCE26/) | 09/15-09/16/2026 | [Quantum Zeitgeist coverage](https://quantumzeitgeist.com/quantum-hpc-integration-ieee-quantum-week-2026/#schedulers-licences-and-reservations) |
 | [OCP EMEA Summit (Barcelona)](./talks/2026-04-30-OCP-EMEA/) | 04/30/2026 | [Recording](https://youtu.be/Dmtd9GP0Fcw?is=1OzRWzTgTA91wLzs) |
 | [OpenQSE (Online)](./talks/2026-01-19-OpenQSE/) | 01/19/2026 | [Recording](https://www.youtube.com/watch?v=DoRbE9p2LuM) |
 | [OCP FTI (Online)](./talks/2026-01-16-OCP/) |  01/16/2026 | [Recording](https://www.youtube.com/watch?v=v0u9uy1K8Aw) |
