@@ -153,7 +153,10 @@
         "name": {{ page.title | default: site.title | strip_html | strip_newlines | jsonify }},
         "isPartOf": { "@id": {{ seo_url | append: "/#website" | jsonify }} },
         "description": {{ seo_description | jsonify }}{% if page.search_image %},
-        "primaryImageOfPage": {{ page.search_image | absolute_url | jsonify }}{% endif %}{% if seo_modified %},
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": {{ page.search_image | absolute_url | jsonify }}
+        }{% endif %}{% if seo_modified %},
         "dateModified": {{ seo_modified | date_to_xmlschema | jsonify }}{% endif %}{% if page.profile_page %},
         "mainEntity": { "@id": {{ seo_url | append: "/#person" | jsonify }} }{% endif %}
       },
