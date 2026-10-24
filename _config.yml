@@ -217,6 +217,7 @@ defaults:
       path: "talkmap"
     values:
       sitemap: false
+      robots: "noindex,follow"
   - scope:
       path: "tags"
     values:
@@ -245,18 +246,22 @@ defaults:
       path: "_pages/404.md"
     values:
       sitemap: false
+      robots: "noindex,follow"
   - scope:
       path: "_pages/page-archive.html"
     values:
       sitemap: false
+      robots: "noindex,follow"
   - scope:
       path: "_pages/collection-archive.html"
     values:
       sitemap: false
+      robots: "noindex,follow"
   - scope:
       path: "_pages/sitemap.md"
     values:
       sitemap: false
+      robots: "noindex,follow"
   - scope:
       path: "_pages/terms.md"
     values:
@@ -300,11 +305,11 @@ whitelist:
   - jekyll-archives
   - jemoji
 
-jekyll-sitemap:
-  exclude:
-    - /tags/
-    - /tags/*
-    - /categories/
+category_descriptions:
+  "Quantum-HPC Strategy": "Articles on integrating quantum processors into HPC: schedulers, portable runtimes, infrastructure and making systems usable for researchers."
+  "Technical Leadership & Engineering Practice": "Notes on software architecture, engineering judgement and shipping useful products, from abstractions and microservices to AI-assisted development."
+  "AI & ML Systems": "Experiments and explanations covering LLM agents, prompt injection, AI security and the software that connects language models to real tasks."
+  "Industry & Technology Trends": "Perspectives on bringing deeptech into use, from quantum computing and HPC conferences to the practical challenges of AI product development."
 
 
 # Archives

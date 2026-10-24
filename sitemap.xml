@@ -1,0 +1,43 @@
+---
+layout: null
+permalink: /sitemap.xml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {% assign collections = site.collections | where_exp: 'collection', 'collection.output != false' %}
+  {% for collection in collections %}
+    {% assign docs = collection.docs | where_exp: 'doc', 'doc.sitemap != false' %}
+    {% for doc in docs %}
+      {% unless doc.robots contains 'noindex' %}
+      <url>
+        <loc>{{ doc.url | replace: '/index.html', '/' | absolute_url | xml_escape }}</loc>
+        {% if doc.last_modified_at or doc.modified or doc.date %}
+        <lastmod>{{ doc.last_modified_at | default: doc.modified | default: doc.date | date_to_xmlschema }}</lastmod>
+        {% endif %}
+      </url>
+      {% endunless %}
+    {% endfor %}
+  {% endfor %}
+  {% assign pages = site.html_pages | where_exp: 'page', 'page.sitemap != false' | where_exp: 'page', 'page.type != "tag"' %}
+  {% for page in pages %}
+    {% unless page.robots contains 'noindex' %}
+    <url>
+      <loc>{{ page.url | replace: '/index.html', '/' | absolute_url | xml_escape }}</loc>
+      {% if page.last_modified_at or page.modified %}
+      <lastmod>{{ page.last_modified_at | default: page.modified | date_to_xmlschema }}</lastmod>
+      {% endif %}
+    </url>
+    {% endunless %}
+  {% endfor %}
+  {% assign static_files = site.static_files | where_exp: 'file', 'file.sitemap != false' %}
+  {% for file in static_files %}
+    {% if file.extname == '.html' or file.extname == '.htm' or file.extname == '.xhtml' or file.extname == '.pdf' %}
+    {% unless file.name == '404.html' %}
+    <url>
+      <loc>{{ file.path | replace: '/index.html', '/' | absolute_url | xml_escape }}</loc>
+      <lastmod>{{ file.modified_time | date_to_xmlschema }}</lastmod>
+    </url>
+    {% endunless %}
+    {% endif %}
+  {% endfor %}
+</urlset>

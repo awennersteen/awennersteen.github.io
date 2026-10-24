@@ -26,8 +26,10 @@
 <title>{{- seo_title -}}{% if paginator %}{% unless paginator.page == 1 %} {{ site.title_separator }} {{ site.data.ui-text[site.locale].page | default: "Page" }} {{ paginator.page }}{% endunless %}{% endif %}</title>
 
 {% assign seo_description = page.description | default: page.excerpt | default: site.description %}
-{% if page.type == 'tag' or page.type == 'category' %}
+{% if page.type == 'tag' %}
   {% capture seo_description %}Articles about {{ page.title }} by {{ site.title }}.{% endcapture %}
+{% elsif page.type == 'category' %}
+  {% assign seo_description = site.category_descriptions[page.title] | default: seo_description %}
 {% endif %}
 {% if seo_description %}
   {% assign seo_description = seo_description | markdownify | strip_html | strip_newlines | escape_once %}
@@ -78,7 +80,7 @@
 <meta property="og:locale" content="{{ site.locale | default: 'en-GB' | replace: '-', '_' | replace: 'en_UK', 'en_GB' }}">
 <meta property="og:site_name" content="{{ site.title }}">
 <meta property="og:title" content="{{ social_title }}">
-<meta property="og:type" content="{% if page.date %}article{% else %}website{% endif %}">
+<meta property="og:type" content="{% if page.collection == 'posts' %}article{% else %}website{% endif %}">
 
 {% if seo_url %}
   <link rel="canonical" href="{{ page.url | prepend: seo_url | replace: "/index.html", "/" }}">
@@ -123,7 +125,7 @@
   {% if seo_image_alt %}<meta property="og:image:alt" content="{{ seo_image_alt | escape_once }}">{% endif %}
 {% endif %}
 
-{% if page.date %}
+{% if page.collection == 'posts' %}
   <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
 {% endif %}
 
